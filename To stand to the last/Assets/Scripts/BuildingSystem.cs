@@ -6,7 +6,7 @@ using UnityEngine;
 public class BuildingSystem : MonoBehaviour
 {
     [Header("Set in Inspector")]
-    [SerializeField] private GameObject guiBuild;
+    [SerializeField] private GameObject guiBuildChoice;
     
     private Camera _camera;
     
