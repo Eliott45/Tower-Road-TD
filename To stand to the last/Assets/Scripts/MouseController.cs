@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class MouseController : MonoBehaviour
 {
-    [Header("Set in Inspector")]
+    [Header("Set GUI")]
     [SerializeField] private GameObject guiBuildPanelPrefab;
-    
+
+    [Header("Prefabs of towers")] 
+    [SerializeField] private GameObject towerArcherPrefab;
+
     /// <summary>
     /// Main camera on scene.
     /// </summary>
@@ -45,9 +48,23 @@ public class MouseController : MonoBehaviour
         {
             case "TowerSpot":
                 _buildPanel.transform.position = hit.transform.position;
+                _buildPanel.transform.parent = hit.transform;
                 _buildPanel.SetActive(true);
                 break;
+            case "BuildArcherTower":
+                Instantiate(towerArcherPrefab);
+                break;
+            case "BuildMagicTower":
+                Debug.Log("BuildMagicTower");
+                break;
+            case "BuildSupportTower":
+                Debug.Log("BuildSupportTower");
+                break;
+            case "BuildStoneTower":
+                Debug.Log("BuildStoneTower");
+                break;
             default:
+                _buildPanel.SetActive(false);
                 break;
         }
     }

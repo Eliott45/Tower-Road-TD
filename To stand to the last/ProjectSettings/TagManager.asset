@@ -31,8 +31,8 @@ TagManager:
   - 
   - 
   - 
-  - Bridge
-  - Road
+  - 
+  - 
   - 
   - 
   - 
@@ -46,9 +46,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Road
+  - name: BuildPanel
     uniqueID: 2803489663
     locked: 0
-  - name: Bridge
+  - name: CostTower
     uniqueID: 2581469401
     locked: 0
