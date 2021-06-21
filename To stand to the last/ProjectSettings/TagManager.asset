@@ -9,6 +9,7 @@ TagManager:
   - BuildMagicTower
   - BuildSupportTower
   - BuildStoneTower
+  - ArcherTower
   layers:
   - Default
   - TransparentFX

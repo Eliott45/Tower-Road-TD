@@ -767,6 +767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guiBuildPanelPrefab: {fileID: 7616685333421813553, guid: 0469fbe2bb4cdd34b8aa7f8a08605e91, type: 3}
+  towerArcherPrefab: {fileID: 6073815172751748397, guid: 2f62ef0f152605547991faa1287d49ef, type: 3}
 --- !u!4 &998592467 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5175226072837951599, guid: 48b9a45ff9ab85b40a63ab30e644b3b2, type: 3}

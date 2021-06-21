@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MouseController : MonoBehaviour
@@ -16,24 +14,33 @@ public class MouseController : MonoBehaviour
     /// </summary>
     private Camera _camera;
     private GameObject _buildPanel;
+    private static Transform _towerAnchorTransform;
 
     private void Awake()
     {
-        _camera = Camera.main; 
+        _camera = Camera.main; // Get main camera. 
     }
 
     private void Start()
     {
+        // Checking the required components:
         if (guiBuildPanelPrefab == null) throw new Exception("Build panel prefab not installed!");
+        if (towerArcherPrefab == null) throw new Exception("Archer tower prefab not installed!");
+        
         _buildPanel = Instantiate(guiBuildPanelPrefab);
         _buildPanel.SetActive(false);
+
+        _towerAnchorTransform = new GameObject("TowerAnchor").transform;
     }
 
     private void Update()
     {
         if (Input.GetButtonDown("Fire1")) StartCheck();
     }
-
+    
+    /// <summary>
+    /// Click handler.
+    /// </summary>
     private void StartCheck()
     {
         var ray = _camera.ScreenPointToRay(Input.mousePosition);
@@ -49,10 +56,15 @@ public class MouseController : MonoBehaviour
             case "TowerSpot":
                 _buildPanel.transform.position = hit.transform.position;
                 _buildPanel.transform.parent = hit.transform;
+                
                 _buildPanel.SetActive(true);
                 break;
             case "BuildArcherTower":
-                Instantiate(towerArcherPrefab);
+                var tower = Instantiate(towerArcherPrefab,_towerAnchorTransform);
+                var position = hit.transform.parent.transform.position;
+                tower.transform.position = new Vector2(position.x + 0.08f, position.y + 0.2f);
+                
+                _buildPanel.SetActive(false);
                 break;
             case "BuildMagicTower":
                 Debug.Log("BuildMagicTower");
@@ -62,6 +74,9 @@ public class MouseController : MonoBehaviour
                 break;
             case "BuildStoneTower":
                 Debug.Log("BuildStoneTower");
+                break;
+            case "ArcherTower":
+                Debug.Log("ArcherTower!");
                 break;
             default:
                 _buildPanel.SetActive(false);
