@@ -16,7 +16,7 @@ public class NavMeshAgent2D : MonoBehaviour
     [SerializeField] float _speed = 3.5f;
     [SerializeField] float _angularSpeed = 120;
     [SerializeField] float _acceleration = 8;
-    [SerializeField] float _stoppingDistance = 0;
+    [SerializeField] float _stoppingDistance;
     [SerializeField] bool _autoBraking = true; // false is too weird, true by default.
 
     // obstacle avoidance disabled by default because it just doesn't work very
@@ -36,9 +36,9 @@ public class NavMeshAgent2D : MonoBehaviour
     // cache
     new Rigidbody2D rigidbody2D;
     new Collider2D collider2D;
-
+    
     // monobehaviour ///////////////////////////////////////////////////////////
-    void Awake()
+    private void Awake()
     {
         // create projection
         var go = GameObject.CreatePrimitive(PrimitiveType.Cylinder);

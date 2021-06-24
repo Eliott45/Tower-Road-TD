@@ -6,6 +6,9 @@ using Random = UnityEngine.Random;
 
 public class WaveSpawner : MonoBehaviour
 {
+    [Header("Set in Inspector")]
+    [SerializeField] private Transform destination;
+    
     [Header("Waves options:")]
     [SerializeField] private WaveDefinition[] waves;
     
@@ -38,9 +41,16 @@ public class WaveSpawner : MonoBehaviour
         {
             for (var j = 0; j < enemy.count; j++)
             {
-                Instantiate(enemy.typeOfEnemy, _enemyAnchorTransform);
+                SpawnEnemy(enemy.typeOfEnemy);
                 yield return new WaitForSeconds(enemy.secondToSpawnEnemy);
             }
         }
+    }
+
+    private void SpawnEnemy(GameObject enemy)
+    {
+        var go = Instantiate(enemy, transform);
+        go.transform.parent = _enemyAnchorTransform;
+        go.GetComponent<NavMeshAgent2D>().destination = destination.position;
     }
 }
