@@ -14,11 +14,14 @@ public class MouseController : MonoBehaviour
     /// </summary>
     private Camera _camera;
     private GameObject _buildPanel;
+    
     private static Transform _towerAnchorTransform;
 
     private void Awake()
     {
-        _camera = Camera.main; // Get main camera. 
+        _camera = Camera.main; // Get main camera.
+        
+        _towerAnchorTransform = new GameObject("TowerAnchor").transform;
     }
 
     private void Start()
@@ -26,11 +29,9 @@ public class MouseController : MonoBehaviour
         // Checking the required components:
         if (guiBuildPanelPrefab == null) throw new Exception("Build panel prefab not installed!");
         if (towerArcherPrefab == null) throw new Exception("Archer tower prefab not installed!");
-        
+
         _buildPanel = Instantiate(guiBuildPanelPrefab);
         _buildPanel.SetActive(false);
-
-        _towerAnchorTransform = new GameObject("TowerAnchor").transform;
     }
 
     private void Update()
