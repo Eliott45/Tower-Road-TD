@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class MouseController : MonoBehaviour
+public class MouseManager : MonoBehaviour
 {
     [Header("Set GUI")]
     [SerializeField] private GameObject guiBuildPanelPrefab;
@@ -62,8 +62,7 @@ public class MouseController : MonoBehaviour
                 break;
             case "BuildArcherTower":
                 var tower = Instantiate(towerArcherPrefab,_towerAnchorTransform);
-                var position = hit.transform.parent.transform.position;
-                tower.transform.position = new Vector2(position.x + 0.08f, position.y + 0.2f);
+                tower.transform.position = hit.transform.parent.transform.position;
 
                 _buildPanel.SetActive(false);
                 break;
