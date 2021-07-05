@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,5 +18,9 @@ public class UIDisplayStats : MonoBehaviour
     public void GetDamage(int damage = 1)
     {
         health -= damage;
+        if(health <= 0)
+        {
+            GetComponent<LevelManager>().LoseGame();
+        }
     }
 }
