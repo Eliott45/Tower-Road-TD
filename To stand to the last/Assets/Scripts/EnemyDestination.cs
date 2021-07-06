@@ -13,7 +13,7 @@ public class EnemyDestination : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Enemy")) return;
-        _stats.GetDamage();
+        _stats.UpdateHealthCounter();
         Destroy(other.gameObject);
     }
 }

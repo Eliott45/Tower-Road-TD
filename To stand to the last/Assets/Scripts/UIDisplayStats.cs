@@ -12,7 +12,7 @@ public class UIDisplayStats : MonoBehaviour
     [Header("Set Options:")] 
     public int health = 20;
     
-    public void GetDamage(int damage = 1)
+    public void UpdateHealthCounter(int damage = 1)
     {
         health -= damage;
         
