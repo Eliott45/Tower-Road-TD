@@ -1539,6 +1539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthCounter: {fileID: 2043501409}
   goldCounter: {fileID: 1997753248}
+  waveCounter: {fileID: 1128977150}
   health: 20
 --- !u!114 &947161370
 MonoBehaviour:

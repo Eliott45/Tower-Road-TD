@@ -12,6 +12,8 @@ public class WaveSpawner : MonoBehaviour
     [Header("Waves options:")]
     [SerializeField] private WaveDefinition[] waves;
     
+    private UIDisplayStats _wavesUI;
+    
     private int _currentWave;
     
     private static Transform _enemyAnchorTransform;
@@ -19,10 +21,12 @@ public class WaveSpawner : MonoBehaviour
     private void Awake()
     {
         _enemyAnchorTransform = new GameObject("EnemyAnchor").transform;
+        if (Camera.main is { }) _wavesUI = Camera.main.GetComponent<UIDisplayStats>();
     }
 
     private void Start()
     { 
+        _wavesUI.UpdateWaveCounter(_currentWave, waves.Length);
         StartCoroutine(SpawnWave());
     }
 
@@ -32,7 +36,8 @@ public class WaveSpawner : MonoBehaviour
         yield return new WaitForSeconds(waves[_currentWave].secondToSpawnWave);
         
         _currentWave++;
-
+        _wavesUI.UpdateWaveCounter(_currentWave, waves.Length);
+        
         if (_currentWave < waves.Length) StartCoroutine(SpawnWave());
 
         var enemies = waves[_currentWave - 1].enemies;
