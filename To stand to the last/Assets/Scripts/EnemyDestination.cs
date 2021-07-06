@@ -14,6 +14,6 @@ public class EnemyDestination : MonoBehaviour
     {
         if (!other.CompareTag("Enemy")) return;
         _stats.UpdateHealthCounter();
-        Destroy(other.gameObject);
+        Destroy(other.gameObject); // Destroy the enemy 
     }
 }

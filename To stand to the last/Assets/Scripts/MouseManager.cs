@@ -13,6 +13,9 @@ public class MouseManager : MonoBehaviour
     /// Main camera on scene.
     /// </summary>
     private Camera _camera;
+    /// <summary>
+    /// Graphic panel for construction.
+    /// </summary>
     private GameObject _buildPanel;
     
     private static Transform _towerAnchorTransform;

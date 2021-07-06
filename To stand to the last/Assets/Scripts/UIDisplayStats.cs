@@ -9,7 +9,7 @@ public class UIDisplayStats : MonoBehaviour
     [SerializeField] private Text waveCounter;
     
 
-    [Header("Set Options:")] 
+    [Header("Set Options:")]
     public int health = 20;
     
     public void UpdateHealthCounter(int damage = 1)
@@ -24,6 +24,11 @@ public class UIDisplayStats : MonoBehaviour
         healthCounter.text = health.ToString();
     }
 
+    /// <summary>
+    /// Change text of wave in UI.
+    /// </summary>
+    /// <param name="currentWave">Current wave in a level.</param>
+    /// <param name="maxWaves">Maximum number of waves in a level.</param>
     public void UpdateWaveCounter(int currentWave, int maxWaves)
     {
         waveCounter.text = $"WAVE {currentWave} / {maxWaves}";

@@ -1647,6 +1647,7 @@ GameObject:
   - component: {fileID: 947161365}
   - component: {fileID: 947161364}
   - component: {fileID: 947161367}
+  - component: {fileID: 947161371}
   - component: {fileID: 947161368}
   - component: {fileID: 947161369}
   - component: {fileID: 947161370}
@@ -1779,6 +1780,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   losingUI: {fileID: 1251847870}
+  winUI: {fileID: 1542545263}
+--- !u!114 &947161371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947161363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b11eb55b4733a347b238987b7dfab73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  origin: {fileID: 1005388525}
+  destination: {fileID: 280776696}
+  waves:
+  - secondToSpawnWave: 0
+    enemies:
+    - typeOfEnemy: {fileID: 3912896158251171716, guid: 40d553eb900b5b74abba2d43ac2a9243, type: 3}
+      count: 5
+      secondToSpawnEnemy: 0.8
 --- !u!1 &965237083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,7 +1921,7 @@ GameObject:
   - component: {fileID: 1005388525}
   - component: {fileID: 1005388526}
   m_Layer: 0
-  m_Name: SpawnerWaves
+  m_Name: EnemyOrigin
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1926,11 +1948,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005388524}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b11eb55b4733a347b238987b7dfab73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  origin: {fileID: 0}
   destination: {fileID: 280776696}
   waves:
   - secondToSpawnWave: 1
@@ -1938,16 +1961,6 @@ MonoBehaviour:
     - typeOfEnemy: {fileID: 3912896158251171716, guid: 40d553eb900b5b74abba2d43ac2a9243, type: 3}
       count: 5
       secondToSpawnEnemy: 0.5
-  - secondToSpawnWave: 20
-    enemies:
-    - typeOfEnemy: {fileID: 3912896158251171716, guid: 40d553eb900b5b74abba2d43ac2a9243, type: 3}
-      count: 2
-      secondToSpawnEnemy: 1
-  - secondToSpawnWave: 20
-    enemies:
-    - typeOfEnemy: {fileID: 3912896158251171716, guid: 40d553eb900b5b74abba2d43ac2a9243, type: 3}
-      count: 5
-      secondToSpawnEnemy: 0.2
 --- !u!1 &1022135577
 GameObject:
   m_ObjectHideFlags: 0
@@ -3817,7 +3830,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1542545264
 RectTransform:
   m_ObjectHideFlags: 0
