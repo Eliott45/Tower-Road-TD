@@ -64,8 +64,10 @@ public class MouseManager : MonoBehaviour
                 _buildPanel.SetActive(true);
                 break;
             case "BuildArcherTower":
-                var tower = Instantiate(towerArcherPrefab,_towerAnchorTransform);
-                tower.transform.position = hit.transform.parent.transform.position;
+                var tower = Instantiate(towerArcherPrefab, _towerAnchorTransform);
+                tower.transform.position = new Vector2(
+                    hit.transform.parent.transform.position.x, 
+                    hit.transform.parent.transform.position.y + 0.25f);
 
                 _buildPanel.SetActive(false);
                 break;
