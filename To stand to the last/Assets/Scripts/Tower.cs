@@ -37,7 +37,7 @@ public class Tower : MonoBehaviour
     private void Shoot()
     {
         _animator.CrossFade("archer_1_front_attack", 0);
-        
+
         if (targets[0].transform.position.x - transform.position.x <= 0) {
             _transformRotation.y = 180f;
         } else
@@ -53,6 +53,8 @@ public class Tower : MonoBehaviour
         
         _timeAtkDone = Time.time + reloadDuration;
     }
+    
+
 
     private void OnTriggerEnter2D(Collider2D unitCollider)
     {
