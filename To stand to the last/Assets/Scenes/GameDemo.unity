@@ -2332,10 +2332,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc78383cef57fe7458b147c2883815e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
-  attackSpeed: 0
+  damage: 1
+  reloadDuration: 1.25
   projectilePrefab: {fileID: 7901366052003301174, guid: b7269e096e9a5da4faf6b9889eb879ed, type: 3}
-  projectileSpeed: 0
+  projectileSpeed: 2.5
   targets: []
 --- !u!58 &1143461182
 CircleCollider2D:

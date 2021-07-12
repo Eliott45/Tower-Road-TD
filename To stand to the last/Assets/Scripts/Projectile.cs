@@ -5,11 +5,39 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D other)
+   
+    private GameObject _target;
+    private float _damage;
+    private float _speed;
+    
+    
+    private void FixedUpdate()
     {
-        if (other.CompareTag("Enemy"))
+        if (_target)
+        {
+            transform.position = Vector3.MoveTowards(
+                transform.position, 
+                _target.transform.position, 
+                Time.deltaTime * _speed);
+        }
+        else
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject == _target)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void GetStats(GameObject target, float damage, float speed)
+    {
+        _target = target;
+        _damage = damage;
+        _speed = speed;
     }
 }
