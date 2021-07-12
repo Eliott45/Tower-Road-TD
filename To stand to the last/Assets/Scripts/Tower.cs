@@ -11,30 +11,34 @@ public class Tower : MonoBehaviour
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private float projectileSpeed;
     
-    private Animator _anim;
+    private Animator _animator;
+    private Quaternion _transformRotation;
     
     [Header("Set Dynamically")]
     [SerializeField] private List<GameObject> targets;
 
     private void Start()
     {
-        _anim = GetComponent<Animator>();
+        _animator = GetComponent<Animator>();
+        _transformRotation = transform.rotation;
     }
 
     private void Update()
     {
-        if (targets.Count > 0) {
-            Shoot();
-        } else
-        {
-            _anim.CrossFade("archer_1_idle", 0);
-        }
+        if (targets.Count > 0) Shoot();
     }
 
     private void Shoot()
     {
-        _anim.CrossFade("archer_1_front_attack", 0);
-        Debug.Log("Shoot the " + targets[0]);
+        _animator.CrossFade("archer_1_front_attack", 0);
+        if (targets[0].transform.position.x - transform.position.x <= 0) {
+            _transformRotation.y = 180f;
+        } else
+        {
+            _transformRotation.y = 0f;
+        }
+        transform.rotation = _transformRotation;
+        // var go = Instantiate(projectilePrefab);
     }
 
     private void OnTriggerEnter2D(Collider2D unitCollider)

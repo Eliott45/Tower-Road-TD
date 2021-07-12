@@ -6,8 +6,14 @@ using Random = UnityEngine.Random;
 
 public class WaveSpawner : MonoBehaviour
 {
-    [Header("Set in Inspector")] 
+    /// <summary>
+    /// Spawn location of opponents.
+    /// </summary>
+    [Header("Set in Inspector")]
     [SerializeField] private Transform origin;
+    /// <summary>
+    /// End point of arrival for enemies.
+    /// </summary>
     [SerializeField] private Transform destination;
     
     [Header("Waves options:")]
@@ -15,9 +21,7 @@ public class WaveSpawner : MonoBehaviour
     
     private UIDisplayStats _wavesUI;
     private LevelManager _levelManager;
-    
     private int _currentWave;
-
     private readonly List<GameObject> _enemies = new List<GameObject>(); 
     
     private static Transform _enemyAnchorTransform;

@@ -987,6 +987,18 @@ PrefabInstance:
       propertyPath: m_CullingMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4371806071868618890, guid: 2f62ef0f152605547991faa1287d49ef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4371806071868618890, guid: 2f62ef0f152605547991faa1287d49ef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4371806071868618890, guid: 2f62ef0f152605547991faa1287d49ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6073815172751748397, guid: 2f62ef0f152605547991faa1287d49ef, type: 3}
       propertyPath: m_Name
       value: TowerArcher
@@ -2322,7 +2334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 0
   attackSpeed: 0
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 7901366052003301174, guid: b7269e096e9a5da4faf6b9889eb879ed, type: 3}
   projectileSpeed: 0
   targets: []
 --- !u!58 &1143461182
