@@ -29,6 +29,7 @@ public class WaveSpawner : MonoBehaviour
 
     private void Awake()
     {
+        // Create an empty object to store enemies in the scene 
         _enemyAnchorTransform = new GameObject("EnemyAnchor").transform;
         
         if (Camera.main is null) return;

@@ -15,7 +15,7 @@ public class LevelManager : MonoBehaviour
     public void LoseGame()
     {
         losingUI.SetActive(true);
-        Time.timeScale = 0;
+        Time.timeScale = 0; // Stop all updates in the game 
     }
     
     /// <summary>

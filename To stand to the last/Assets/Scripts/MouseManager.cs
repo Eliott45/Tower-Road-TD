@@ -6,7 +6,7 @@ public class MouseManager : MonoBehaviour
     [Header("Set GUI")]
     [SerializeField] private GameObject guiBuildPanelPrefab;
 
-    [Header("Prefabs of towers")] 
+    [Header("Prefabs of towers")]
     [SerializeField] private GameObject towerArcherPrefab;
 
     /// <summary>
@@ -17,7 +17,9 @@ public class MouseManager : MonoBehaviour
     /// Graphic panel for construction.
     /// </summary>
     private GameObject _buildPanel;
-    
+    /// <summary>
+    /// Empty game object for storing towers. 
+    /// </summary>
     private static Transform _towerAnchorTransform;
 
     private void Awake()

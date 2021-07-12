@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-   
+    /// <summary>
+    /// The current target of the projectile. 
+    /// </summary>
     private GameObject _target;
     private float _damage;
     private float _speed;

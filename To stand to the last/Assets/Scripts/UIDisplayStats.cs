@@ -8,7 +8,9 @@ public class UIDisplayStats : MonoBehaviour
     [SerializeField] private Text goldCounter;
     [SerializeField] private Text waveCounter;
     
-
+    /// <summary>
+    /// Maximum allowed number of skipped enemies.
+    /// </summary>
     [Header("Set Options:")]
     public int health = 20;
     

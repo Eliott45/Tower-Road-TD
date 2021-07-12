@@ -1,4 +1,7 @@
-﻿[System.Serializable]
+﻿/// <summary>
+/// Wave data.
+/// </summary>
+[System.Serializable]
 public class WaveDefinition
 {
     /// <summary>

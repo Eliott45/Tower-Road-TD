@@ -7,6 +7,9 @@ public class Tower : MonoBehaviour
 {
     [Header("Set tower options:")]
     [SerializeField] private float damage;
+    /// <summary>
+    /// Time until the next shot.
+    /// </summary>
     [SerializeField] private float reloadDuration;
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private float projectileSpeed;
