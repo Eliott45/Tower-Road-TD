@@ -6,15 +6,15 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     [Header("Set in Inspector")] 
-    [SerializeField] private GameObject losingUI;
-    [SerializeField] private GameObject winUI;
+    [SerializeField] private GameObject _losingUI;
+    [SerializeField] private GameObject _winUI;
 
     /// <summary>
     /// Displays the lose window, and freezes the time.
     /// </summary>
     public void LoseGame()
     {
-        losingUI.SetActive(true);
+        _losingUI.SetActive(true);
         Time.timeScale = 0; // Stop all updates in the game 
     }
     
@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviour
     /// </summary>
     public void WinGame()
     {
-        winUI.SetActive(true);
+        _winUI.SetActive(true);
         Time.timeScale = 0;
     }
     

@@ -1735,8 +1735,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca7e0bd226ddf6b40ada3447e54d04cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guiBuildPanelPrefab: {fileID: 7616685333421813553, guid: 0469fbe2bb4cdd34b8aa7f8a08605e91, type: 3}
-  towerArcherPrefab: {fileID: 6073815172751748397, guid: 2f62ef0f152605547991faa1287d49ef, type: 3}
+  _guiBuildPanelPrefab: {fileID: 7616685333421813553, guid: 0469fbe2bb4cdd34b8aa7f8a08605e91, type: 3}
+  _towerArcherPrefab: {fileID: 6073815172751748397, guid: 2f62ef0f152605547991faa1287d49ef, type: 3}
 --- !u!114 &947161368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1749,8 +1749,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ccff8d07ff3d44db59f74751d5190a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultResolution: {x: 1280, y: 720}
-  widthOrHeight: 0
+  _defaultResolution: {x: 720, y: 1280}
+  _widthOrHeight: 0
 --- !u!114 &947161369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1763,9 +1763,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73193457af2e3074694c86e34eb2790b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthCounter: {fileID: 2043501409}
-  goldCounter: {fileID: 1997753248}
-  waveCounter: {fileID: 1128977150}
+  _healthCounter: {fileID: 2043501409}
+  _goldCounter: {fileID: 1997753248}
+  _waveCounter: {fileID: 1128977150}
   health: 20
 --- !u!114 &947161370
 MonoBehaviour:
@@ -1779,8 +1779,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efba4d794dd5641418f000d1c3954534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  losingUI: {fileID: 1251847870}
-  winUI: {fileID: 1542545263}
+  _losingUI: {fileID: 1251847870}
+  _winUI: {fileID: 1542545263}
 --- !u!114 &947161371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1793,19 +1793,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b11eb55b4733a347b238987b7dfab73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  origin: {fileID: 1005388525}
-  destination: {fileID: 280776696}
-  waves:
-  - secondToSpawnWave: 0
-    enemies:
-    - typeOfEnemy: {fileID: 3912896158251171716, guid: 40d553eb900b5b74abba2d43ac2a9243, type: 3}
-      count: 5
-      secondToSpawnEnemy: 0.8
-  - secondToSpawnWave: 10
-    enemies:
-    - typeOfEnemy: {fileID: 3912896158251171716, guid: 40d553eb900b5b74abba2d43ac2a9243, type: 3}
-      count: 10
-      secondToSpawnEnemy: 0.8
+  _origin: {fileID: 1005388525}
+  _destination: {fileID: 280776696}
+  _waves: []
 --- !u!1 &965237083
 GameObject:
   m_ObjectHideFlags: 0

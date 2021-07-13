@@ -4,10 +4,10 @@ using UnityEngine;
 public class MouseManager : MonoBehaviour
 {
     [Header("Set GUI")]
-    [SerializeField] private GameObject guiBuildPanelPrefab;
+    [SerializeField] private GameObject _guiBuildPanelPrefab;
 
     [Header("Prefabs of towers")]
-    [SerializeField] private GameObject towerArcherPrefab;
+    [SerializeField] private GameObject _towerArcherPrefab;
 
     /// <summary>
     /// Main camera on scene.
@@ -32,10 +32,10 @@ public class MouseManager : MonoBehaviour
     private void Start()
     {
         // Checking the required components:
-        if (guiBuildPanelPrefab == null) throw new Exception("Build panel prefab not installed!");
-        if (towerArcherPrefab == null) throw new Exception("Archer tower prefab not installed!");
+        if (_guiBuildPanelPrefab == null) throw new Exception("Build panel prefab not installed!");
+        if (_towerArcherPrefab == null) throw new Exception("Archer tower prefab not installed!");
 
-        _buildPanel = Instantiate(guiBuildPanelPrefab);
+        _buildPanel = Instantiate(_guiBuildPanelPrefab);
         _buildPanel.SetActive(false);
     }
 
@@ -66,7 +66,7 @@ public class MouseManager : MonoBehaviour
                 _buildPanel.SetActive(true);
                 break;
             case "BuildArcherTower":
-                var tower = Instantiate(towerArcherPrefab, _towerAnchorTransform);
+                var tower = Instantiate(_towerArcherPrefab, _towerAnchorTransform);
                 tower.transform.position = new Vector2(
                     hit.transform.parent.transform.position.x, 
                     hit.transform.parent.transform.position.y + 0.25f);

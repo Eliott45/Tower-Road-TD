@@ -6,16 +6,16 @@ using UnityEngine;
 public class Tower : MonoBehaviour
 {
     [Header("Set tower options:")]
-    [SerializeField] private float damage;
+    [SerializeField] private float _damage;
     /// <summary>
     /// Time until the next shot.
     /// </summary>
-    [SerializeField] private float reloadDuration;
-    [SerializeField] private GameObject projectilePrefab;
-    [SerializeField] private float projectileSpeed;
+    [SerializeField] private float _reloadDuration;
+    [SerializeField] private GameObject _projectilePrefab;
+    [SerializeField] private float _projectileSpeed;
     
     [Header("Set Dynamically")]
-    [SerializeField] private List<GameObject> targets;
+    [SerializeField] private List<GameObject> _targets;
     
     private Animator _animator;
     private Quaternion _transformRotation;
@@ -31,7 +31,7 @@ public class Tower : MonoBehaviour
 
     private void Update()
     {
-        if (targets.Count > 0 && _timeAtkDone < Time.time)
+        if (_targets.Count > 0 && _timeAtkDone < Time.time)
         {
             Shoot();
         }
@@ -45,7 +45,7 @@ public class Tower : MonoBehaviour
     {
         _animator.SetBool(Attack, true);
 
-        if (targets[0].transform.position.x - transform.position.x <= 0) {
+        if (_targets[0].transform.position.x - transform.position.x <= 0) {
             _transformRotation.y = 180f;
         } else
         {
@@ -54,11 +54,11 @@ public class Tower : MonoBehaviour
         
         transform.rotation = _transformRotation;
         
-        var go = Instantiate(projectilePrefab);
+        var go = Instantiate(_projectilePrefab);
         go.transform.position = transform.position;
-        go.GetComponent<Projectile>().GetStats(targets[0], damage, projectileSpeed);
+        go.GetComponent<Projectile>().GetStats(_targets[0], _damage, _projectileSpeed);
         
-        _timeAtkDone = Time.time + reloadDuration;
+        _timeAtkDone = Time.time + _reloadDuration;
     }
     
 
@@ -66,11 +66,11 @@ public class Tower : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D unitCollider)
     {
         if (!unitCollider.CompareTag("Enemy")) return;
-        targets.Add(unitCollider.gameObject);
+        _targets.Add(unitCollider.gameObject);
     }
     
     private void OnTriggerExit2D(Collider2D unitCollider)
     {
-        targets.Remove(unitCollider.gameObject);
+        _targets.Remove(unitCollider.gameObject);
     }
 }

@@ -4,9 +4,9 @@ using UnityEngine.UI;
 public class UIDisplayStats : MonoBehaviour
 {
     [Header("Set in Inspector:")] 
-    [SerializeField] private Text healthCounter;
-    [SerializeField] private Text goldCounter;
-    [SerializeField] private Text waveCounter;
+    [SerializeField] private Text _healthCounter;
+    [SerializeField] private Text _goldCounter;
+    [SerializeField] private Text _waveCounter;
     
     /// <summary>
     /// Maximum allowed number of skipped enemies.
@@ -23,7 +23,7 @@ public class UIDisplayStats : MonoBehaviour
             GetComponent<LevelManager>().LoseGame();
         }
         
-        healthCounter.text = health.ToString();
+        _healthCounter.text = health.ToString();
     }
 
     /// <summary>
@@ -33,6 +33,6 @@ public class UIDisplayStats : MonoBehaviour
     /// <param name="maxWaves">Maximum number of waves in a level.</param>
     public void UpdateWaveCounter(int currentWave, int maxWaves)
     {
-        waveCounter.text = $"WAVE {currentWave} / {maxWaves}";
+        _waveCounter.text = $"WAVE {currentWave} / {maxWaves}";
     }
 }
