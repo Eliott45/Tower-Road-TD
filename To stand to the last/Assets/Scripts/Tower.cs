@@ -20,8 +20,8 @@ public class Tower : MonoBehaviour
     private Animator _animator;
     private Quaternion _transformRotation;
     private float _timeAtkDone;
-    
-    
+    private static readonly int Attack = Animator.StringToHash("Attack");
+
 
     private void Start()
     {
@@ -35,11 +35,15 @@ public class Tower : MonoBehaviour
         {
             Shoot();
         }
+        else
+        {
+            _animator.SetBool(Attack, false);
+        }
     }
 
     private void Shoot()
     {
-        _animator.CrossFade("archer_1_front_attack", 0);
+        _animator.SetBool(Attack, true);
 
         if (targets[0].transform.position.x - transform.position.x <= 0) {
             _transformRotation.y = 180f;
