@@ -209,11 +209,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc78383cef57fe7458b147c2883815e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
-  reloadDuration: 1
-  projectilePrefab: {fileID: 7901366052003301174, guid: b7269e096e9a5da4faf6b9889eb879ed, type: 3}
-  projectileSpeed: 2.5
-  targets: []
+  _damage: 5
+  _reloadDuration: 2
+  _projectilePrefab: {fileID: 7901366052003301174, guid: b7269e096e9a5da4faf6b9889eb879ed, type: 3}
+  _projectileSpeed: 2
+  _targets: []
 --- !u!1 &7314795927413420633
 GameObject:
   m_ObjectHideFlags: 0

@@ -1749,7 +1749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ccff8d07ff3d44db59f74751d5190a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _defaultResolution: {x: 720, y: 1280}
+  _defaultResolution: {x: 1280, y: 720}
   _widthOrHeight: 0
 --- !u!114 &947161369
 MonoBehaviour:
@@ -1795,7 +1795,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _origin: {fileID: 1005388525}
   _destination: {fileID: 280776696}
-  _waves: []
+  _waves:
+  - secondToSpawnWave: 2
+    enemies:
+    - typeOfEnemy: {fileID: 3912896158251171716, guid: 40d553eb900b5b74abba2d43ac2a9243, type: 3}
+      count: 5
+      secondToSpawnEnemy: 1.2
+  - secondToSpawnWave: 10
+    enemies:
+    - typeOfEnemy: {fileID: 3912896158251171716, guid: 40d553eb900b5b74abba2d43ac2a9243, type: 3}
+      count: 10
+      secondToSpawnEnemy: 1.5
 --- !u!1 &965237083
 GameObject:
   m_ObjectHideFlags: 0
