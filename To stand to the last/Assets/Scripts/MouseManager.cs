@@ -9,6 +9,8 @@ public class MouseManager : MonoBehaviour
     [Header("Prefabs of towers")]
     [SerializeField] private GameObject _towerArcherPrefab;
     [SerializeField] private GameObject _towerSupportPrefab;
+    [SerializeField] private GameObject _towerMagicPrefab;
+    
     
     /// <summary>
     /// Main camera on scene.
@@ -70,7 +72,7 @@ public class MouseManager : MonoBehaviour
                 CreateTower(_towerArcherPrefab, hit);
                 break;
             case "BuildMagicTower":
-                Debug.Log("BuildMagicTower");
+                CreateTower(_towerMagicPrefab, hit);
                 break;
             case "BuildSupportTower":
                 CreateTower(_towerSupportPrefab, hit);
@@ -83,6 +85,9 @@ public class MouseManager : MonoBehaviour
                 break;
             case "SupportTower":
                 Debug.Log("SupportTower!");
+                break;
+            case "MagicTower":
+                Debug.Log("MagicTower!");
                 break;
             default:
                 _buildPanel.SetActive(false);
