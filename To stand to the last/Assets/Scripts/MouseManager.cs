@@ -8,7 +8,8 @@ public class MouseManager : MonoBehaviour
 
     [Header("Prefabs of towers")]
     [SerializeField] private GameObject _towerArcherPrefab;
-
+    [SerializeField] private GameObject _towerSupportPrefab;
+    
     /// <summary>
     /// Main camera on scene.
     /// </summary>
@@ -66,18 +67,13 @@ public class MouseManager : MonoBehaviour
                 _buildPanel.SetActive(true);
                 break;
             case "BuildArcherTower":
-                var tower = Instantiate(_towerArcherPrefab, _towerAnchorTransform);
-                tower.transform.position = new Vector2(
-                    hit.transform.parent.transform.position.x, 
-                    hit.transform.parent.transform.position.y + 0.25f);
-
-                _buildPanel.SetActive(false);
+                CreateTower(_towerArcherPrefab, hit);
                 break;
             case "BuildMagicTower":
                 Debug.Log("BuildMagicTower");
                 break;
             case "BuildSupportTower":
-                Debug.Log("BuildSupportTower");
+                CreateTower(_towerSupportPrefab, hit);
                 break;
             case "BuildStoneTower":
                 Debug.Log("BuildStoneTower");
@@ -85,10 +81,30 @@ public class MouseManager : MonoBehaviour
             case "ArcherTower":
                 Debug.Log("ArcherTower!");
                 break;
+            case "SupportTower":
+                Debug.Log("SupportTower!");
+                break;
             default:
                 _buildPanel.SetActive(false);
                 break;
         }
+    }
+
+    /// <summary>
+    /// Creates a tower. 
+    /// </summary>
+    /// <param name="towerPrefab">Prefab to create a tower.</param>
+    /// <param name="hit">Spawn point.</param>
+    private void CreateTower(GameObject towerPrefab, RaycastHit hit)
+    {
+        var tower = Instantiate(towerPrefab, _towerAnchorTransform);
+        var position = hit.transform.parent.transform.position;
+        
+        tower.transform.position = new Vector2(
+            position.x, 
+            position.y + 0.25f);
+        
+        _buildPanel.SetActive(false);
     }
 }
     

@@ -1802,6 +1802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _guiBuildPanelPrefab: {fileID: 7616685333421813553, guid: 0469fbe2bb4cdd34b8aa7f8a08605e91, type: 3}
   _towerArcherPrefab: {fileID: 6073815172751748397, guid: 2f62ef0f152605547991faa1287d49ef, type: 3}
+  _towerSupportPrefab: {fileID: 9180763055914466354, guid: d8e98e3ad6f68194580babdae6f33fdc, type: 3}
 --- !u!114 &947161368
 MonoBehaviour:
   m_ObjectHideFlags: 0
