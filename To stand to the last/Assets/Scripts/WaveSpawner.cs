@@ -10,14 +10,14 @@ public class WaveSpawner : MonoBehaviour
     /// Spawn location of opponents.
     /// </summary>
     [Header("Set in Inspector")]
-    [SerializeField] private Transform origin;
+    [SerializeField] private Transform _origin;
     /// <summary>
     /// End point of arrival for enemies.
     /// </summary>
-    [SerializeField] private Transform destination;
+    [SerializeField] private Transform _destination;
     
     [Header("Waves options:")]
-    [SerializeField] private WaveDefinition[] waves;
+    [SerializeField] private WaveDefinition[] _waves;
     
     private UIDisplayStats _wavesUI;
     private LevelManager _levelManager;
@@ -39,7 +39,7 @@ public class WaveSpawner : MonoBehaviour
 
     private void Start()
     {
-        _wavesUI.UpdateWaveCounter(_currentWave, waves.Length);
+        _wavesUI.UpdateWaveCounter(_currentWave, _waves.Length);
         StartCoroutine(SpawnWave());
     }
 
@@ -47,7 +47,7 @@ public class WaveSpawner : MonoBehaviour
     {
         _enemies.RemoveAll( x => !x);
 
-        if (_enemies.Count == 0 && _currentWave == waves.Length)
+        if (_enemies.Count == 0 && _currentWave == _waves.Length)
         {
             _levelManager.WinGame();
         }
@@ -59,14 +59,14 @@ public class WaveSpawner : MonoBehaviour
     private IEnumerator SpawnWave()
     {
         // Waiting for the time until the new wave 
-        yield return new WaitForSeconds(waves[_currentWave].secondToSpawnWave);
+        yield return new WaitForSeconds(_waves[_currentWave].secondToSpawnWave);
         
         _currentWave++;
-        _wavesUI.UpdateWaveCounter(_currentWave, waves.Length);
+        _wavesUI.UpdateWaveCounter(_currentWave, _waves.Length);
         
-        if (_currentWave < waves.Length) StartCoroutine(SpawnWave());
+        if (_currentWave < _waves.Length) StartCoroutine(SpawnWave());
 
-        var enemies = waves[_currentWave - 1].enemies;
+        var enemies = _waves[_currentWave - 1].enemies;
 
         foreach (var enemy in enemies)
         {
@@ -84,9 +84,9 @@ public class WaveSpawner : MonoBehaviour
     /// <param name="enemy">Enemy prefab.</param>
     private void SpawnEnemy(GameObject enemy)
     {
-        var go = Instantiate(enemy, origin);
+        var go = Instantiate(enemy, _origin);
         _enemies.Add(go);
         go.transform.parent = _enemyAnchorTransform;
-        go.GetComponent<NavMeshAgent2D>().destination = destination.position;
+        go.GetComponent<NavMeshAgent2D>().destination = _destination.position;
     }
 }

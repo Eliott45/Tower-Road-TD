@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: 200003d19f786f0419526e9e14697765
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2032419629609166972
+    second: MagicTowers_0
+  - first:
+      213: 6002021127387592684
+    second: MagicTowers_1
+  - first:
+      213: 2606794775724032940
+    second: MagicTowers_2
+  - first:
+      213: -1494666863587929536
+    second: MagicTowers_3
+  - first:
+      213: 2372495444626702132
+    second: MagicTowers_4
+  - first:
+      213: 685625100060205984
+    second: MagicTowers_5
+  - first:
+      213: -3938719648240976579
+    second: MagicTowers_6
+  - first:
+      213: 3409285314706064642
+    second: MagicTowers_7
+  - first:
+      213: -1568125358338392157
+    second: MagicTowers_8
+  - first:
+      213: -2042283093040820700
+    second: MagicTowers_9
+  - first:
+      213: -3285402780110172468
+    second: MagicTowers_10
+  - first:
+      213: -7160903797555269261
+    second: MagicTowers_11
+  - first:
+      213: 2214860959006099038
+    second: MagicTowers_12
+  - first:
+      213: 597332520534399578
+    second: MagicTowers_13
+  - first:
+      213: 5751441883208144845
+    second: MagicTowers_14
+  - first:
+      213: -3086637776123240783
+    second: MagicTowers_15
+  - first:
+      213: -8902922771040941249
+    second: MagicTowers_16
+  - first:
+      213: -6893536603449170993
+    second: MagicTowers_17
+  - first:
+      213: -1715795629332417654
+    second: MagicTowers_18
+  - first:
+      213: -8223830565132375972
+    second: MagicTowers_19
+  - first:
+      213: -8783971716775004083
+    second: MagicTowers_20
+  - first:
+      213: 5544777794342718065
+    second: MagicTowers_21
+  - first:
+      213: -3928837980539920558
+    second: MagicTowers_22
+  - first:
+      213: -6035345551285165386
+    second: MagicTowers_23
+  - first:
+      213: 5466742298972725364
+    second: MagicTowers_24
+  - first:
+      213: -7807498952290442106
+    second: MagicTowers_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MagicTowers_0
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 6724
+        width: 665
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78a26982ea943c10800000000000000
+      internalID: 2032419629609166972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_1
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 6724
+        width: 773
+        height: 886
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7b3505a667b4350800000000000000
+      internalID: 6002021127387592684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_2
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 6724
+        width: 661
+        height: 886
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3006189023d2420800000000000000
+      internalID: 2606794775724032940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_3
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 5613
+        width: 673
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0425b4a1860e14be0800000000000000
+      internalID: -1494666863587929536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_4
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 5613
+        width: 673
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ff430790ccce020800000000000000
+      internalID: 2372495444626702132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_5
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 5613
+        width: 703
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a32e2a5564d38900800000000000000
+      internalID: 685625100060205984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_6
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 4450
+        width: 666
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dbeb0295bd659c0800000000000000
+      internalID: -3938719648240976579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_7
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 4450
+        width: 662
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205c2093ee6305f20800000000000000
+      internalID: 3409285314706064642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_8
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 4450
+        width: 665
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af35fc7b46ec3ae0800000000000000
+      internalID: -1568125358338392157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 2941
+        width: 647
+        height: 844
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e048ce85a58a3e0800000000000000
+      internalID: -2042283093040820700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_10
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 2911
+        width: 647
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccec37b0497e762d0800000000000000
+      internalID: -3285402780110172468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_11
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 2911
+        width: 646
+        height: 1267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371f8fbafeb5f9c90800000000000000
+      internalID: -7160903797555269261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2116
+        width: 180
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e568070be44ccbe10800000000000000
+      internalID: 2214860959006099038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_13
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2131
+        width: 182
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5add3b33c62a4800800000000000000
+      internalID: 597332520534399578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_14
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 2116
+        width: 182
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7dcea9be931df40800000000000000
+      internalID: 5751441883208144845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_15
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 2131
+        width: 182
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be5fdbdb4f0a25d0800000000000000
+      internalID: -3086637776123240783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_16
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 2116
+        width: 182
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b4e51d8e6727480800000000000000
+      internalID: -8902922771040941249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_17
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 2131
+        width: 186
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc362419bfc3550a0800000000000000
+      internalID: -6893536603449170993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_18
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 2116
+        width: 182
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83397e37f44038e0800000000000000
+      internalID: -1715795629332417654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_19
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 2131
+        width: 177
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58e8483ca51fdd80800000000000000
+      internalID: -8223830565132375972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_20
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1180
+        width: 405
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d483c885340191680800000000000000
+      internalID: -8783971716775004083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_21
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1172
+        width: 368
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a8546c60203fc40800000000000000
+      internalID: 5544777794342718065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_22
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 1150
+        width: 461
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fdadd2ca6f979c0800000000000000
+      internalID: -3928837980539920558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_23
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 935
+        width: 676
+        height: 906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2e9ee92352e3ca0800000000000000
+      internalID: -6035345551285165386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_24
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 1507
+        width: 517
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4702fd82825cddb40800000000000000
+      internalID: 5466742298972725364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicTowers_25
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 0
+        width: 1371
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6846e7c911136a390800000000000000
+      internalID: -7807498952290442106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

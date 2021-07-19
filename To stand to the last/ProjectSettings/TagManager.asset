@@ -11,6 +11,8 @@ TagManager:
   - BuildStoneTower
   - ArcherTower
   - Enemy
+  - SupportTower
+  - MagicTower
   layers:
   - Default
   - TransparentFX

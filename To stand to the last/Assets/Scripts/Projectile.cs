@@ -16,7 +16,9 @@ public class Projectile : MonoBehaviour
     private void FixedUpdate()
     {
         if (_target)
-        {
+        { 
+            transform.Translate(Vector2.up * ((_speed / 2) * Time.deltaTime));
+            
             transform.position = Vector3.MoveTowards(
                 transform.position, 
                 _target.transform.position, 
@@ -27,6 +29,7 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -44,3 +47,4 @@ public class Projectile : MonoBehaviour
         _speed = speed;
     }
 }
+

@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class CameraConstantWidth : MonoBehaviour
 {
-    [SerializeField] private Vector2 defaultResolution = new Vector2(720, 1280);
-    [SerializeField] [Range(0f, 1f)] private float widthOrHeight;
+    [SerializeField] private Vector2 _defaultResolution = new Vector2(720, 1280);
+    [SerializeField] [Range(0f, 1f)] private float _widthOrHeight;
 
     private Camera _componentCamera;
 
@@ -18,7 +18,7 @@ public class CameraConstantWidth : MonoBehaviour
         _componentCamera = GetComponent<Camera>();
         _initialSize = _componentCamera.orthographicSize;
 
-        _targetAspect = defaultResolution.x / defaultResolution.y;
+        _targetAspect = _defaultResolution.x / _defaultResolution.y;
 
         _initialFov = _componentCamera.fieldOfView;
         _horizontalFov = CalcVerticalFov(_initialFov, 1 / _targetAspect);
@@ -29,12 +29,12 @@ public class CameraConstantWidth : MonoBehaviour
         if (_componentCamera.orthographic)
         {
             var constantWidthSize = _initialSize * (_targetAspect / _componentCamera.aspect);
-            _componentCamera.orthographicSize = Mathf.Lerp(constantWidthSize, _initialSize, widthOrHeight);
+            _componentCamera.orthographicSize = Mathf.Lerp(constantWidthSize, _initialSize, _widthOrHeight);
         }
         else
         {
             var constantWidthFov = CalcVerticalFov(_horizontalFov, _componentCamera.aspect);
-            _componentCamera.fieldOfView = Mathf.Lerp(constantWidthFov, _initialFov, widthOrHeight);
+            _componentCamera.fieldOfView = Mathf.Lerp(constantWidthFov, _initialFov, _widthOrHeight);
         }
     }
 

@@ -7,8 +7,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [Header("Set options")] 
-    [SerializeField] private float health = 10f;
-    [SerializeField] private float showDamageDuration = 0.1f;
+    [SerializeField] private float _health = 10f;
+    [SerializeField] private float _showDamageDuration = 0.1f;
     
     private Color[] _originalColors;
     private Material[] _materials;
@@ -34,9 +34,9 @@ public class Enemy : MonoBehaviour
 
     public void GetDamage(float damage)
     {
-        health -= damage;
+        _health -= damage;
         ShowDamage();
-        if (health <= 0) Destroy(gameObject);
+        if (_health <= 0) Destroy(gameObject);
     }
     
     private void ShowDamage() {
@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour
             m.color = Color.red;
         }
         _showingDamage = true;
-        _damageDoneTime = Time.time + showDamageDuration;
+        _damageDoneTime = Time.time + _showDamageDuration;
     }
     
     private void UnShowDamage() {
