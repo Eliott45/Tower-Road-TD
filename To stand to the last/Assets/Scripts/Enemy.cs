@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class Enemy : MonoBehaviour
 {
     [Header("Set options")] 
@@ -14,7 +15,10 @@ public class Enemy : MonoBehaviour
     private Material[] _materials;
     private float _damageDoneTime;
     private bool _showingDamage;
+    private Animator _animator;
     
+    private static readonly int Alive = Animator.StringToHash("alive");
+
     private void Awake()
     {
         _materials = GetAllMaterials(gameObject);
@@ -25,20 +29,31 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
+
     private void Update()
     {
         if (_showingDamage && Time.time > _damageDoneTime) {
             UnShowDamage();
         }
     }
-
+    
     public void GetDamage(float damage)
     {
         _health -= damage;
         ShowDamage();
-        if (_health <= 0) Destroy(gameObject);
+        if (_health <= 0)
+        {
+            Fell();
+        };
     }
     
+    /// <summary>
+    /// Make unit red to show damage. 
+    /// </summary>
     private void ShowDamage() {
         foreach (var m in _materials) {
             m.color = Color.red;
@@ -52,6 +67,20 @@ public class Enemy : MonoBehaviour
             _materials[i].color = _originalColors[i];
         }
         _showingDamage = false;
+    }
+
+    /// <summary>
+    /// Start to fall.
+    /// </summary>
+    private void Fell()
+    {
+        GetComponent<NavMeshAgent2D>().speed = 0;
+        _animator.SetBool(Alive, false);
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
     }
     
     /// <summary>
