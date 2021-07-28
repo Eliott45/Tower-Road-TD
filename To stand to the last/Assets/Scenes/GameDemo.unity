@@ -1865,10 +1865,13 @@ MonoBehaviour:
   _waves:
   - secondToSpawnWave: 2
     enemies:
+    - typeOfEnemy: {fileID: 1172111006350548706, guid: 8f42b6b7752d62e43ad7289d6edbb39a, type: 3}
+      count: 3
+      secondToSpawnEnemy: 2
     - typeOfEnemy: {fileID: 3912896158251171716, guid: 40d553eb900b5b74abba2d43ac2a9243, type: 3}
-      count: 10
-      secondToSpawnEnemy: 0.8
-  - secondToSpawnWave: 25
+      count: 2
+      secondToSpawnEnemy: 5
+  - secondToSpawnWave: 50
     enemies:
     - typeOfEnemy: {fileID: 3912896158251171716, guid: 40d553eb900b5b74abba2d43ac2a9243, type: 3}
       count: 10
