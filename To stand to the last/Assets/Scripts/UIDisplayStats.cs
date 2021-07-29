@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,14 @@ public class UIDisplayStats : MonoBehaviour
     /// </summary>
     [Header("Set Options:")]
     public int health = 20;
-    
+    public int gold = 1000;
+
+    private void Awake()
+    {
+        UpdateHealthCounter(0);
+        UpdateGoldCounter(0);
+    }
+
     public void UpdateHealthCounter(int damage = 1)
     {
         health -= damage;
@@ -34,5 +42,16 @@ public class UIDisplayStats : MonoBehaviour
     public void UpdateWaveCounter(int currentWave, int maxWaves)
     {
         _waveCounter.text = $"WAVE {currentWave} / {maxWaves}";
+    }
+
+    public bool UpdateGoldCounter(int price)
+    {
+        if (gold < price)
+        {
+            return false;
+        } 
+        gold -= price;
+        _goldCounter.text = $"{gold}";
+        return true;
     }
 }

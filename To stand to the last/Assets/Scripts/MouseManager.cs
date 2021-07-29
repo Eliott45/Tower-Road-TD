@@ -24,10 +24,12 @@ public class MouseManager : MonoBehaviour
     /// Empty game object for storing towers. 
     /// </summary>
     private static Transform _towerAnchorTransform;
+    private UIDisplayStats _stats;
 
     private void Awake()
     {
         _camera = Camera.main; // Get main camera.
+        _stats = GetComponent<UIDisplayStats>();
         
         _towerAnchorTransform = new GameObject("TowerAnchor").transform;
     }
@@ -102,6 +104,10 @@ public class MouseManager : MonoBehaviour
     /// <param name="hit">Spawn point.</param>
     private void CreateTower(GameObject towerPrefab, RaycastHit hit)
     {
+        if (!_stats.UpdateGoldCounter(100))
+        {
+            return;
+        };
         var tower = Instantiate(towerPrefab, _towerAnchorTransform);
         var position = hit.transform.parent.transform.position;
         

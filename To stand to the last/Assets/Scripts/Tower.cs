@@ -61,8 +61,6 @@ public class Tower : MonoBehaviour
         _timeAtkDone = Time.time + _reloadDuration;
     }
     
-
-
     private void OnTriggerEnter2D(Collider2D unitCollider)
     {
         if (!unitCollider.CompareTag("Enemy")) return;

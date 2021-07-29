@@ -1833,7 +1833,8 @@ MonoBehaviour:
   _healthCounter: {fileID: 2043501409}
   _goldCounter: {fileID: 1997753248}
   _waveCounter: {fileID: 1128977150}
-  health: 20
+  health: 15
+  gold: 200
 --- !u!114 &947161370
 MonoBehaviour:
   m_ObjectHideFlags: 0
