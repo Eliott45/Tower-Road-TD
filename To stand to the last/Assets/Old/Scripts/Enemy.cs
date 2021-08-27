@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
+namespace Old.Scripts
+{ 
+    [RequireComponent(typeof(Animator))]
 public class Enemy : MonoBehaviour
 {
     [Header("Set options")] 
@@ -93,4 +95,6 @@ public class Enemy : MonoBehaviour
         return(rends.Select(rend => rend.material).ToArray());
     }
     
+}   
 }
+
