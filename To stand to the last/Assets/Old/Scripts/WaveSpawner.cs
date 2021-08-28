@@ -49,7 +49,7 @@ namespace Old.Scripts
 
             if (_enemies.Count == 0 && _currentWave == _waves.Length)
             {
-                _levelManager.WinGame();
+                // _levelManager.WinGame();
             }
         }
 
