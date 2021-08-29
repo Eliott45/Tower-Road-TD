@@ -1,4 +1,13 @@
-public interface IClicked
+namespace Mouse
 {
-    public void OnClick();
+    /// <summary>
+    /// Mouse interface.
+    /// </summary>
+    public interface IClicked
+    {
+        /// <summary>
+        /// On mouse click.
+        /// </summary>
+        public void OnClick();
+    }
 }

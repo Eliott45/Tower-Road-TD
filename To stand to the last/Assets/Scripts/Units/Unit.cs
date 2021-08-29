@@ -1,3 +1,4 @@
+using Mouse;
 using UnityEngine;
 
 namespace Units
@@ -19,7 +20,10 @@ namespace Units
         private protected abstract void GetDamage(float damage);
         private protected abstract void Move(Vector3 pos);
         private protected abstract void Die();
-        
-        public void OnClick() { }
+
+        public void OnClick()
+        {
+            Debug.Log("Unit click");
+        }
     }
 }

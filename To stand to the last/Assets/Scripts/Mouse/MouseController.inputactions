@@ -1,0 +1,52 @@
+{
+    "name": "MouseController",
+    "maps": [
+        {
+            "name": "Mouse",
+            "id": "6adb7288-5afd-478b-92ab-2738f3e546c2",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "a5561d6c-b95b-4af3-a797-d5857a0aa0cb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Position",
+                    "type": "PassThrough",
+                    "id": "f88d5321-bd01-4cd2-9403-4f31d9e09713",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d9427cbe-6348-464d-afb6-16fb2dc2d2f5",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "30cb6ede-fd41-4e93-a73d-854a25062b72",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
