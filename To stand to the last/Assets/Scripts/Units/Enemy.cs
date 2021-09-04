@@ -15,9 +15,10 @@ namespace Units
         private protected override void Move(Vector3 pos) { }
         private protected override void Die() { }
         
-        private void GetDestination(Transform destination)
+        public void GetDestination(Transform destination)
         {
             _destination = destination;
+            Debug.Log("Get destination!");
         }
     }
 }

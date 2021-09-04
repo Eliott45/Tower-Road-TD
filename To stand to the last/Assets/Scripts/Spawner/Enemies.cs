@@ -1,11 +1,20 @@
-using Units;
 using UnityEngine;
 
 namespace Spawner
 {
-    public class Enemies : MonoBehaviour
+    /// <summary>
+    /// Component containing information about the enemy to spawn.
+    /// </summary>
+    [System.Serializable]
+    public class Enemies
     {
-        public Enemy enemy;
+        /// <summary>
+        /// Enemy prefab.
+        /// </summary>
+        public GameObject enemyPrefab;
+        /// <summary>
+        /// Spawn amount of this enemy.
+        /// </summary>
         public int count;
     }
 }
