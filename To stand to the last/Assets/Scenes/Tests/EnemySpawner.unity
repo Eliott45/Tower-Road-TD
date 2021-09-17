@@ -250,17 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _origin: {fileID: 685282186}
   _destination: {fileID: 2015415190}
-  _waves:
-  - spawnWaveTime: 2
-    enemyPerSecond: 1
-    enemies:
-    - enemy: {fileID: 973638130302278174, guid: 19818f98f168dde419a7a63ae90c3b06, type: 3}
-      count: 3
-  - spawnWaveTime: 10
-    enemyPerSecond: 2
-    enemies:
-    - enemy: {fileID: 973638130302278174, guid: 19818f98f168dde419a7a63ae90c3b06, type: 3}
-      count: 3
+  _waves: []
 --- !u!65 &685282183
 BoxCollider:
   m_ObjectHideFlags: 0
