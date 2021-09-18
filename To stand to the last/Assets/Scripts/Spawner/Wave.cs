@@ -9,11 +9,11 @@ namespace Spawner
         /// <summary>
         /// Spawn a wave in n-time.
         /// </summary>
-        public float spawnWaveTime;
+        public float timeBeforeSpawnWave;
         /// <summary>
         /// Spawn an enemy in n-time.
         /// </summary>
-        public float enemyPerSecond;
+        public float timeBeforeSpawnEnemy;
         /// <summary>
         /// Enemy groups.
         /// </summary>

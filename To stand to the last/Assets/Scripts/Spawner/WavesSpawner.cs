@@ -11,13 +11,19 @@ namespace Spawner
     {
         [Header("Set spawn options:")]
         [SerializeField] private Transform _origin; // Spawn point 
-        [SerializeField] private Transform _destination; // enemy destination 
+        [SerializeField] private Transform _destination; // enemy destination
+        private Transform _enemyAnchorTransform;
         
-        [Header("Ser waves options:")]
+        [Header("Set waves options:")]
         [SerializeField] private Wave[] _waves;
 
-        private int _currentWave; 
-        
+        private int _currentWave;
+
+        private void Awake()
+        {
+            _enemyAnchorTransform = new GameObject("EnemyAnchor").transform;
+        }
+
         private void Start()
         {
             StartCoroutine(SpawnWave());
@@ -28,7 +34,7 @@ namespace Spawner
         /// </summary>
         private IEnumerator SpawnWave()
         {
-            yield return new WaitForSeconds(_waves[_currentWave].spawnWaveTime); 
+            yield return new WaitForSeconds(_waves[_currentWave].timeBeforeSpawnWave); 
             
             _currentWave++;
             
@@ -40,7 +46,7 @@ namespace Spawner
                 for (var j = 0; j < enemy.count; j++)
                 {
                     SpawnEnemy(enemy.enemyPrefab);
-                    yield return new WaitForSeconds(_waves[_currentWave -1].enemyPerSecond);
+                    yield return new WaitForSeconds(_waves[_currentWave -1].timeBeforeSpawnEnemy);
                 }
             }
         }
@@ -51,8 +57,9 @@ namespace Spawner
         /// <param name="enemy">Enemy prefab.</param>
         private void SpawnEnemy(GameObject enemy)
         {
-            var go = Instantiate(enemy, _origin);
-            go.GetComponent<Enemy>().GetDestination(_destination);
+            var go = Instantiate(enemy, _enemyAnchorTransform);
+            go.transform.position = _origin.position;
+            go.GetComponent<Enemy>().SetDestination(_destination);
         }
     }
 }
