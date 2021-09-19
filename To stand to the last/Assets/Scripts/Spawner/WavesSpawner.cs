@@ -1,4 +1,5 @@
 using System.Collections;
+using Level;
 using Units;
 using UnityEngine;
 
@@ -9,16 +10,19 @@ namespace Spawner
     /// </summary>
     public class WavesSpawner : MonoBehaviour
     {
+        [Header("Set in Inspector:")] 
+        [SerializeField] private UIWaveCounter _waveCounterUI; 
+        
         [Header("Set spawn options:")]
         [SerializeField] private Transform _origin; // Spawn point 
         [SerializeField] private Transform _destination; // enemy destination
-        private Transform _enemyAnchorTransform;
-        
+
         [Header("Set waves options:")]
         [SerializeField] private Wave[] _waves;
 
         private int _currentWave;
-
+        private Transform _enemyAnchorTransform; // Anchor for enemies (for easy display in the editor) 
+        
         private void Awake()
         {
             _enemyAnchorTransform = new GameObject("EnemyAnchor").transform;
@@ -37,6 +41,7 @@ namespace Spawner
             yield return new WaitForSeconds(_waves[_currentWave].timeBeforeSpawnWave); 
             
             _currentWave++;
+            _waveCounterUI.UpdateWaveCounter(_currentWave, _waves.Length);
             
             if (_currentWave < _waves.Length) StartCoroutine(SpawnWave());
             

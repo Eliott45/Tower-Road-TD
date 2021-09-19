@@ -1929,6 +1929,7 @@ GameObject:
   - component: {fileID: 1128977149}
   - component: {fileID: 1128977151}
   - component: {fileID: 1128977150}
+  - component: {fileID: 1128977152}
   m_Layer: 5
   m_Name: WaveCounter
   m_TagString: Untagged
@@ -1997,6 +1998,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128977148}
   m_CullTransparentMesh: 1
+--- !u!114 &1128977152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128977148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ada5f12341389044685e09facb04ed38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1174370240
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,6 +2128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6510c336faf4fb24799e8a0c7c85c449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _waveCounterUI: {fileID: 0}
   _origin: {fileID: 1005388525}
   _destination: {fileID: 280776696}
   _waves:
@@ -2124,6 +2138,12 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 3912896158251171716, guid: 40d553eb900b5b74abba2d43ac2a9243,
         type: 3}
       count: 4
+  - timeBeforeSpawnWave: 5
+    timeBeforeSpawnEnemy: 1
+    enemies:
+    - enemyPrefab: {fileID: 3912896158251171716, guid: 40d553eb900b5b74abba2d43ac2a9243,
+        type: 3}
+      count: 2
 --- !u!1 &1251847870
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ namespace Units
         [SerializeField] private float _health;
         [SerializeField] private float _physicalResistance;
         [SerializeField] private float _magicalResistance;
-        [SerializeField] private float _movementSpeed;
+        [SerializeField] private float _movementSpeed; // Unit movement speed 
         [SerializeField] private float _attackSpeed;
         [SerializeField] private float _damage;
         [SerializeField] private float _triggerRange;
