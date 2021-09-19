@@ -805,6 +805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea1ff2ff91e5e64cb2b6ad027ab7a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _player: {fileID: 947161368}
 --- !u!1 &303872252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1549,7 @@ GameObject:
   - component: {fileID: 947161365}
   - component: {fileID: 947161364}
   - component: {fileID: 947161367}
+  - component: {fileID: 947161368}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1632,6 +1634,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eee8a53bbfffba64cb8e478aac3fb93c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &947161368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947161363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbf9ebde4139224fb124c46222a575b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 20
+  _gold: 0
 --- !u!1 &1001973649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2128,7 +2144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6510c336faf4fb24799e8a0c7c85c449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waveCounterUI: {fileID: 0}
+  _waveCounterUI: {fileID: 1128977152}
   _origin: {fileID: 1005388525}
   _destination: {fileID: 280776696}
   _waves:

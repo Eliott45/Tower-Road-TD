@@ -7,7 +7,7 @@ namespace Units
     public class Enemy : Unit
     {
         [Header("Set enemy options:")]
-        [SerializeField] private int _damageToPlayer;
+        public int damageToPlayer;
         [SerializeField] private int _goldReward;
         [SerializeField] private float _expReward;
 
