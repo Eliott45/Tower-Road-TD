@@ -1,8 +1,8 @@
-using System;
 using UnityEngine;
 
 namespace Level
 {
+    [RequireComponent(typeof(LevelManager))]
     public class Player : MonoBehaviour
     {
         [Header("Set in Inspector:")]
@@ -12,16 +12,20 @@ namespace Level
         [SerializeField] private int _health;
         [SerializeField] private int _gold;
 
+        private LevelManager _levelManager;
+        
         private void Awake()
         {
             _UIPlayerStats.UpdateHealthCounter(_health);
             _UIPlayerStats.UpdateGoldCounter(_gold);
+            _levelManager = GetComponent<LevelManager>();
         }
 
         public void GetDamage(int damage)
         {
             _health -= damage;
             _UIPlayerStats.UpdateHealthCounter(_health);
+            if (_health <= 0) LevelManager.Lose();
         }
 
         private void GetGold(int gold)
