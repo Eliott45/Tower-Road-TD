@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,11 +9,11 @@ namespace Level
     /// </summary>
     public class UIWaveCounter : MonoBehaviour
     {
-        private Text _text;
+        private TMP_Text _text;
 
         private void Awake()
         {
-            _text = GetComponent<Text>();
+            _text = GetComponent<TMP_Text>(); // Get Text Mesh Pro from this object
         }
 
         /// <summary>
