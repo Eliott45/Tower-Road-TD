@@ -5,14 +5,20 @@ namespace Level
     [RequireComponent(typeof(Player))]
     public class LevelManager : MonoBehaviour
     {
-        private void Win() { }
+        /// <summary>
+        /// Win the game.
+        /// </summary>
+        public void Win()
+        {
+            Debug.Log("You win");
+        }
 
         /// <summary>
         /// Lose the game.
         /// </summary>
-        public static void Lose()
+        public void Lose()
         {
-            Debug.Log("You lose game");
+            Debug.Log("You lose");
         }
         
         private void Pause() {}

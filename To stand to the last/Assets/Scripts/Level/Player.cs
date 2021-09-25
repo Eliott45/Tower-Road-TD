@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace Level
 {
+    /// <summary>
+    /// The main player.
+    /// </summary>
     [RequireComponent(typeof(LevelManager))]
     public class Player : MonoBehaviour
     {
@@ -25,7 +28,7 @@ namespace Level
         {
             _health -= damage;
             _UIPlayerStats.UpdateHealthCounter(_health);
-            if (_health <= 0) LevelManager.Lose();
+            if (_health <= 0) _levelManager.Lose();
         }
 
         private void GetGold(int gold)

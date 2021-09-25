@@ -2229,6 +2229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _waveCounterUI: {fileID: 1128977152}
+  _levelManager: {fileID: 947161369}
   _origin: {fileID: 1005388525}
   _destination: {fileID: 280776696}
   _waves:
