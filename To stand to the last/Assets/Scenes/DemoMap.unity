@@ -447,7 +447,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -31.34, y: 22.419998}
+  m_AnchoredPosition: {x: -31.339996, y: 22.419998}
   m_SizeDelta: {x: -62.68, y: -69.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &262917108
@@ -1422,7 +1422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 4.699997}
+  m_AnchoredPosition: {x: 0, y: 4.699993}
   m_SizeDelta: {x: -17.22, y: -9.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656934032
@@ -1926,8 +1926,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _UIPlayerStats: {fileID: 1001973651}
-  _health: 18
-  _gold: 1888
+  _health: 20
+  _gold: 2000
 --- !u!114 &947161369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1951,13 +1951,14 @@ GameObject:
   - component: {fileID: 992615201}
   - component: {fileID: 992615203}
   - component: {fileID: 992615202}
+  - component: {fileID: 992615204}
   m_Layer: 5
-  m_Name: BuildChoice
+  m_Name: BuildPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &992615201
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2016,6 +2017,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992615200}
   m_CullTransparentMesh: 1
+--- !u!114 &992615204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992615200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c796cde3e915a647af264a64381b3a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1001973649
 GameObject:
   m_ObjectHideFlags: 0
@@ -8236,6 +8249,11 @@ PrefabInstance:
       propertyPath: m_AutoTiling
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4612796994316015809, guid: 48b9a45ff9ab85b40a63ab30e644b3b2,
+        type: 3}
+      propertyPath: _buildPanel
+      value: 
+      objectReference: {fileID: 992615200}
     - target: {fileID: 5175226072837951592, guid: 48b9a45ff9ab85b40a63ab30e644b3b2,
         type: 3}
       propertyPath: m_SortingOrder

@@ -33,7 +33,12 @@ namespace Mouse
         {
             var ray = _camera.ScreenPointToRay(_controls.Mouse.Position.ReadValue<Vector2>());
             var hit = Physics2D.GetRayIntersection(ray);
-            if (hit.collider == null) return;
+            if (hit.collider == null)
+            {
+                BuildPanel.instance.Display(false);
+                return;
+            }
+            BuildPanel.instance.Display(hit.collider.CompareTag("TowerSpot"));
             var click = hit.collider.gameObject.GetComponent<IClicked>();
             click?.OnClick();
         }

@@ -5,6 +5,6 @@ public class TowerSpot : MonoBehaviour, IClicked
 {
     public void OnClick()
     {
-        Debug.Log("Click on Tower Spot");
-    }
+        BuildPanel.instance.Display(true, transform.position);
+    }   
 }
