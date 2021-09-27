@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace Level
 {
+    /// <summary>
+    /// Responsible for level states.
+    /// </summary>
     [RequireComponent(typeof(Player))]
     public class LevelManager : MonoBehaviour
     {
