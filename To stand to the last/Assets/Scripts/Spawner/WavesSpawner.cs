@@ -13,8 +13,7 @@ namespace Spawner
     {
         [Header("Set in Inspector:")] 
         [SerializeField] private UIWaveCounter _waveCounterUI;
-        [SerializeField] private LevelManager _levelManager;
-        
+
         [Header("Set spawn options:")]
         [SerializeField] private Transform _origin; // Spawn point 
         [SerializeField] private Transform _destination; // enemy destination
@@ -81,7 +80,7 @@ namespace Spawner
             enemies.RemoveAll(x => !x);
             if (enemies.Count == 0)
             {
-                _levelManager.Win();
+                LevelManager.instance.Win();
             }
             else
             {

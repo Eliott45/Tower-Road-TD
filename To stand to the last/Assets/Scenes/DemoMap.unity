@@ -976,7 +976,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea1ff2ff91e5e64cb2b6ad027ab7a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 947161368}
 --- !u!1 &303872252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1925,9 +1924,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fbf9ebde4139224fb124c46222a575b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _UIPlayerStats: {fileID: 1001973651}
-  _health: 20
-  _gold: 2000
+  _health: 10
+  _gold: 1000
 --- !u!114 &947161369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2597,7 +2595,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _waveCounterUI: {fileID: 1128977152}
-  _levelManager: {fileID: 947161369}
   _origin: {fileID: 1005388525}
   _destination: {fileID: 280776696}
   _waves:

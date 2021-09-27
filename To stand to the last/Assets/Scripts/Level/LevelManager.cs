@@ -9,6 +9,16 @@ namespace Level
     public class LevelManager : MonoBehaviour
     {
         /// <summary>
+        /// Singleton of LevelManager.
+        /// </summary>
+        public static LevelManager instance;
+
+        private void Awake()
+        {
+            instance = this;
+        }
+
+        /// <summary>
         /// Win the game.
         /// </summary>
         public void Win()

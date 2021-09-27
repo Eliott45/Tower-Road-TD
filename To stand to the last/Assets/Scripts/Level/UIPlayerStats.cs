@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -5,9 +6,16 @@ namespace Level
 {
     public class UIPlayerStats : MonoBehaviour
     {
+        public static UIPlayerStats instance;
+        
         [Header("Set in Inspector:")] 
         [SerializeField] private TMP_Text _healthText;
         [SerializeField] private TMP_Text _goldText;
+
+        private void Awake()
+        {
+            instance = this;
+        }
 
         public void UpdateHealthCounter(int health)
         {
