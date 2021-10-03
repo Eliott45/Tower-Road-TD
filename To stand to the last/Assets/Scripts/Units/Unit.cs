@@ -46,7 +46,7 @@ namespace Units
 
         private protected abstract void Attack(GameObject target);
         private protected abstract void GetDamage(float damage);
-        private protected abstract void Die();
+        public abstract void Die();
 
         public void SetDestination(Transform destination)
         {

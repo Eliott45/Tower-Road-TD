@@ -1,5 +1,4 @@
-using System;
-using Pathfinding;
+using Spawner;
 using UnityEngine;
 
 namespace Units
@@ -13,7 +12,12 @@ namespace Units
 
         private protected override void Attack(GameObject target) { }
         private protected override void GetDamage(float damage) { }
-        private protected override void Die() { }
+
+        public override void Die()
+        {
+            Destroy(gameObject);
+            WavesSpawner.instance.CheckEnemies(); 
+        }
         
     }
 }

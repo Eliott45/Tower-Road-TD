@@ -8,8 +8,9 @@ namespace Level
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!other.CompareTag("Enemy")) return; // If not the enemy, get out 
-            Player.instance.GetDamage(other.GetComponent<Enemy>().damageToPlayer);
-            Destroy(other.gameObject); // Destroy the enemy 
+            var enemy = other.GetComponent<Enemy>();
+            Player.instance.GetDamage(enemy.damageToPlayer);
+            enemy.Die(); // Die enemy
         }
     }
 }

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using Level;
 using Units;
 using UnityEngine;
@@ -20,19 +19,33 @@ namespace Spawner
 
         [Header("Set waves options:")]
         [SerializeField] private Wave[] _waves;
+        
+        [Header("Set is Dynamical:")]
+        public static WavesSpawner instance;
 
         private int _currentWave;
         private Transform _enemyAnchorTransform; // Anchor for enemies (for easy display in the editor) 
-        private readonly List<GameObject> _enemiesList = new List<GameObject>(); // List of enemies in the game scene
+        private int _enemiesCounter;
         
         private void Awake()
         {
             _enemyAnchorTransform = new GameObject("EnemyAnchor").transform;
+            instance = this;
         }
 
         private void Start()
         {
             StartCoroutine(SpawnWave());
+        }
+
+        /// <summary>
+        /// Check the number of enemies.
+        /// </summary>
+        public void CheckEnemies()
+        {
+            _enemiesCounter--;
+            if (_enemiesCounter <= 0 && _currentWave == _waves.Length) LevelManager.instance.Win();
+            
         }
 
         /// <summary>
@@ -50,16 +63,13 @@ namespace Spawner
             var enemies = _waves[_currentWave - 1].enemies;
             foreach (var enemy in enemies)
             {
+                _enemiesCounter += enemy.count;
                 for (var j = 0; j < enemy.count; j++)
                 {
                     SpawnEnemy(enemy.enemyPrefab);
                     yield return new WaitForSeconds(_waves[_currentWave -1].timeBeforeSpawnEnemy);
                 }
             }
-
-            if (_currentWave != _waves.Length) yield break;
-            _enemiesList.RemoveAll(x => !x);
-            StartCoroutine(CheckEnemies(_enemiesList));
         }
         
         /// <summary>
@@ -71,21 +81,8 @@ namespace Spawner
             var go = Instantiate(enemy, _enemyAnchorTransform);
             go.transform.position = _origin.position;
             go.GetComponent<Enemy>().SetDestination(_destination);
-            _enemiesList.Add(go);
         }
         
-        private IEnumerator CheckEnemies(List<GameObject> enemies)
-        {
-            yield return new WaitForSeconds(3f);
-            enemies.RemoveAll(x => !x);
-            if (enemies.Count == 0)
-            {
-                LevelManager.instance.Win();
-            }
-            else
-            {
-                StartCoroutine(CheckEnemies(enemies));
-            }
-        }
+        
     }
 }

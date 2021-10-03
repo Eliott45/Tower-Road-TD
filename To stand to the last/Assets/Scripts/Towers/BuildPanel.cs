@@ -9,7 +9,11 @@ public class BuildPanel : MonoBehaviour
     /// Singleton of build panel.
     /// </summary>
     public static BuildPanel instance;
-    
+    /// <summary>
+    /// Transform of tower spot.
+    /// </summary>
+    public Transform towerSpotTransform { get; private set; }
+
     private void Awake()
     {
         instance = this;
@@ -21,13 +25,13 @@ public class BuildPanel : MonoBehaviour
     /// </summary>
     /// <param name="statusDisplay">Enable panel(true/false).</param>
     /// <param name="newPos">New position of panel.</param>
-    public void Display(bool statusDisplay, Vector2 newPos = new Vector2())
+    public void Display(bool statusDisplay, Transform newPos = null)
     {
-        var pos = gameObject.transform.position;
-        pos.x = newPos.x;
-        pos.y = newPos.y;
-        gameObject.transform.position = pos;
-        
+        if (newPos != null)
+        {
+            gameObject.transform.position = newPos.position;
+            towerSpotTransform = newPos;
+        }
         gameObject.SetActive(statusDisplay);
     }
     

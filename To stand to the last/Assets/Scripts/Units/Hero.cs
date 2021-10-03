@@ -10,7 +10,7 @@ namespace Units
         
         private protected override void Attack(GameObject target) {}
         private protected override void GetDamage(float damage) {}
-        private protected override void Die() {}
+        public override void Die() {}
         
         private void GetExp(float exp) {}
         private void LevelUp(){}
