@@ -6,6 +6,7 @@ using UnityEngine;
 public class BuildChoice : MonoBehaviour, IClicked
 {
     [Header("Set in Inspector:")] 
+    [SerializeField] private GameObject _towerPrefab;
     [SerializeField] private int _price;
     [SerializeField] private TMP_Text _priceText;
 
@@ -20,7 +21,7 @@ public class BuildChoice : MonoBehaviour, IClicked
     public void OnClick()
     {
         if (_player.GetGold() < _price) return;
-        BuildPanel.instance.Display(false);
+        Instantiate(_towerPrefab, BuildPanel.instance.towerSpotTransform);
         _player.SpentGold(_price);
     }
 }

@@ -464,6 +464,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ee72d2fc71a2ac49aefd1fb78cba9c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _towerPrefab: {fileID: 6073815172751748397, guid: 2f62ef0f152605547991faa1287d49ef,
+    type: 3}
   _price: 100
   _priceText: {fileID: 179259061}
 --- !u!61 &205882642
@@ -8307,6 +8309,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5175226072837951599, guid: 48b9a45ff9ab85b40a63ab30e644b3b2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5175226072837951599, guid: 48b9a45ff9ab85b40a63ab30e644b3b2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5175226072837951599, guid: 48b9a45ff9ab85b40a63ab30e644b3b2,
         type: 3}
