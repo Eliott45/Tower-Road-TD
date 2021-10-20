@@ -1,3 +1,4 @@
+using System;
 using Units;
 using UnityEngine;
 
@@ -8,12 +9,22 @@ namespace Archer
         private GameObject _target; //The current target of the projectile. 
         private float _damage;
         private float _speed;
-        
+
+        private void Update()
+        {
+            if (Camera.main is null || !_target) return;
+            // Look at enemy
+            var direction = Camera.main.ScreenToWorldPoint(_target.transform.position) - transform.position;
+            var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            var rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, _speed * Time.deltaTime);
+        }
+
         private void FixedUpdate()
         {
             if (_target)
             { 
-                transform.Translate(Vector2.up * ((_speed / 2) * Time.deltaTime));
+                transform.Translate(Vector2.up * (_speed * 0.5f * Time.deltaTime));
             
                 transform.position = Vector3.MoveTowards(
                     transform.position, 
@@ -45,5 +56,7 @@ namespace Archer
             _damage = damage;
             _speed = speed;
         }
+        
+
     }
 }
