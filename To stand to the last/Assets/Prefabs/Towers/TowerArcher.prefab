@@ -93,6 +93,8 @@ GameObject:
   - component: {fileID: 6073815172751748399}
   - component: {fileID: 6073815172751748396}
   - component: {fileID: 1840816967944571467}
+  - component: {fileID: 6461555999501243622}
+  - component: {fileID: 8506604264046777141}
   m_Layer: 0
   m_Name: TowerArcher
   m_TagString: ArcherTower
@@ -194,6 +196,46 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.47, y: 2.11}
   m_EdgeRadius: 0
+--- !u!58 &6461555999501243622
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6073815172751748397}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.5
+--- !u!114 &8506604264046777141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6073815172751748397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8db33632fa8b104995135be32ad95fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 0
+  _typeDamage: 0
+  _buildTime: 0
+  _prices: 
+  _towers: []
+  _level: 0
+  _rangeAttack: 3.5
+  _speedAttack: 0
+  _targets: []
+  _projectile: {fileID: 0}
+  _projectileSpeed: 0
+  _archerUnit: {fileID: 0}
 --- !u!1 &7314795927413420633
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,10 +383,11 @@ PrefabInstance:
     - target: {fileID: 6018681404764637477, guid: bdf5ae170a39afd4aa054b09aaaa5829,
         type: 3}
       propertyPath: m_Name
-      value: Archer_1
+      value: Archer
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1143461180, guid: bdf5ae170a39afd4aa054b09aaaa5829, type: 3}
+    - {fileID: 1143461182, guid: bdf5ae170a39afd4aa054b09aaaa5829, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bdf5ae170a39afd4aa054b09aaaa5829, type: 3}
 --- !u!4 &4371806071868618890 stripped
 Transform:
