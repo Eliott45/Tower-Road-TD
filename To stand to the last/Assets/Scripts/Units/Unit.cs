@@ -75,7 +75,7 @@ namespace Units
                 case EUnitMode.Die:
                     _aiPath.maxSpeed = 0;
                     _animator.SetBool(Alive, false);
-                    if(_animator.GetBool(Demolish)) Destroy(gameObject);
+                    if(_animator.GetBool(Demolish)) Destroy(gameObject); // If the death animation played, destroy the object
                     break;
             }
         }
