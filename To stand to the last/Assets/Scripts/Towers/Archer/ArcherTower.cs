@@ -17,6 +17,11 @@ namespace Archer
             base.Update();
             if(_currentTarget != null) _archerUnit.Rotate(_currentTarget.transform.position.x);
         }
-        
+
+        private protected override void Attack()
+        {
+            _archerUnit.StartAttackAnimation();
+            base.Attack();
+        }
     }
 }

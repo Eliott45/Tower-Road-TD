@@ -12,7 +12,7 @@ public class RangeTower : Tower
     [SerializeField] private List<GameObject> _targets = new List<GameObject>();
     [SerializeField] protected GameObject _currentTarget;
     
-    private float _reloadingTime;
+    private float _reloadingTime; // Time when tower can attack again
 
     private void Awake()
     {
@@ -43,7 +43,7 @@ public class RangeTower : Tower
     private protected override void Upgrade() {}
     private protected override void Demolish() {}
 
-    private void Attack()
+    private protected virtual void Attack()
     {
         if (!_currentTarget)
         {

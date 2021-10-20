@@ -386,9 +386,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Archer
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1143461180, guid: bdf5ae170a39afd4aa054b09aaaa5829, type: 3}
-    - {fileID: 1143461182, guid: bdf5ae170a39afd4aa054b09aaaa5829, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdf5ae170a39afd4aa054b09aaaa5829, type: 3}
 --- !u!4 &4371806071868618890 stripped
 Transform:
