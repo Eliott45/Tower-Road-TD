@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using Mouse;
 using Pathfinding;
@@ -30,8 +31,14 @@ namespace Units
         private float _damageDoneTime;
         private bool _showingDamage;
 
+        private Animator _animator;
+        private static readonly int Alive = Animator.StringToHash("alive");
+        private static readonly int Demolish = Animator.StringToHash("demolish");
+
         private protected void Awake()
         {
+            _animator = GetComponent<Animator>();
+            
             // variables for moving Agent
             _destinationSetter = GetComponent<AIDestinationSetter>();
             _aiPath = GetComponent<AIPath>();
@@ -65,6 +72,11 @@ namespace Units
                     _transformRotation.y = _aiPath.steeringTarget.x - transform.position.x <= 0 ? 180f : 0f;
                     transform.rotation = _transformRotation;
                     break;
+                case EUnitMode.Die:
+                    _aiPath.maxSpeed = 0;
+                    _animator.SetBool(Alive, false);
+                    if(_animator.GetBool(Demolish)) Destroy(gameObject);
+                    break;
             }
         }
 
@@ -73,9 +85,17 @@ namespace Units
         internal virtual void GetDamage(float damage)
         {
             ShowDamage();
+            _health -= damage;
+            if (_health <= 0)
+            {
+                Die();
+            }
         }
-        
-        public abstract void Die();
+
+        public virtual void Die()
+        {
+            _unitMode = EUnitMode.Die;
+        }
 
         public void SetDestination(Transform destination)
         {
