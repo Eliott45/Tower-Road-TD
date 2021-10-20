@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86b23b8bca6c39743b432675792a204b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 6
   _physicalResistance: 0
   _magicalResistance: 0
   _movementSpeed: 0.8
@@ -131,7 +131,7 @@ MonoBehaviour:
   _unitMode: 0
   _damageType: 0
   damageToPlayer: 1
-  _goldReward: 0
+  _goldReward: 18
   _expReward: 0
 --- !u!114 &468530435
 MonoBehaviour:

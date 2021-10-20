@@ -1,3 +1,4 @@
+using Level;
 using Spawner;
 using UnityEngine;
 
@@ -11,15 +12,10 @@ namespace Units
         [SerializeField] private float _expReward;
 
         private protected override void Attack(GameObject target) { }
-
-        internal override void GetDamage(float damage)
-        {
-            Debug.Log("Get damage: " + damage);
-            base.GetDamage(damage);
-        }
-
+        
         public override void Die()
         {
+            Player.instance.AddGold(_goldReward);
             WavesSpawner.instance.CheckEnemies(); 
             base.Die();
         }

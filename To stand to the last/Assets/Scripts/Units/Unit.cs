@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using Mouse;
 using Pathfinding;
@@ -6,6 +5,7 @@ using UnityEngine;
 
 namespace Units
 {
+    [RequireComponent(typeof(Animator))]
     public abstract class Unit : MonoBehaviour, IClicked
     {
         [Header("Unit options: ")]

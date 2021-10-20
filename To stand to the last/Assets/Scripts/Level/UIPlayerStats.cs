@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Level
 {
+    /// <summary>
+    /// Component for displaying player data.
+    /// </summary>
     public class UIPlayerStats : MonoBehaviour
     {
         public static UIPlayerStats instance;

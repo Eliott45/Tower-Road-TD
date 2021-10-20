@@ -40,9 +40,10 @@ namespace Level
             return _gold;
         }
 
-        private void AddGold(int gold)
+        public void AddGold(int gold)
         {
-        
+            _gold += gold;
+            _playerStats.UpdateGoldCounter(_gold);
         }
         
         public void SpentGold(int gold)
