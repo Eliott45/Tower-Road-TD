@@ -15,6 +15,7 @@ namespace Units
         internal override void GetDamage(float damage)
         {
             Debug.LogError("Get damage: " + damage);
+            base.GetDamage(damage);
         }
 
         public override void Die()
