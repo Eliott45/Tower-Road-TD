@@ -9,7 +9,7 @@ namespace Units
         [SerializeField] private float _experience;
         
         private protected override void Attack(GameObject target) {}
-        private protected override void GetDamage(float damage) {}
+        internal override void GetDamage(float damage) {}
         public override void Die() {}
         
         private void GetExp(float exp) {}

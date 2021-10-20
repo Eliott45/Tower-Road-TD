@@ -20,8 +20,10 @@ namespace Archer
 
         private protected override void Attack()
         {
-            _archerUnit.StartAttackAnimation();
             base.Attack();
+            _archerUnit.StartAttackAnimation();
+            _archerUnit.Shoot(_projectile, _currentTarget, _projectileSpeed, _damage);
         }
+        
     }
 }

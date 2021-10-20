@@ -13,6 +13,12 @@ namespace Archer
             _animator = GetComponent<Animator>();
         }
 
+        public void Shoot(GameObject projectile, GameObject target, float speed, float damage)
+        {
+            var go = Instantiate(projectile, transform);
+            go.GetComponent<ArrowProjectile>().SetStats(target, speed, damage);
+        }
+
         public void Rotate(float enemyPositionX)
         {
             if (enemyPositionX - transform.position.x <= 0)

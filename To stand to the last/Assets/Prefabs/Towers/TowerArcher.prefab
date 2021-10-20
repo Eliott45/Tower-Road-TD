@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 6073815172751748396}
   - component: {fileID: 1840816967944571467}
   - component: {fileID: 6461555999501243622}
-  - component: {fileID: 8506604264046777141}
+  - component: {fileID: 3688705568444768915}
   m_Layer: 0
   m_Name: TowerArcher
   m_TagString: ArcherTower
@@ -212,7 +212,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3.5
---- !u!114 &8506604264046777141
+--- !u!114 &3688705568444768915
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8db33632fa8b104995135be32ad95fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 3
   _typeDamage: 0
   _buildTime: 0
   _prices: 
@@ -234,8 +234,9 @@ MonoBehaviour:
   _speedAttack: 1
   _targets: []
   _currentTarget: {fileID: 0}
-  _projectile: {fileID: 0}
-  _projectileSpeed: 0
+  _projectile: {fileID: 7901366052003301174, guid: b7269e096e9a5da4faf6b9889eb879ed,
+    type: 3}
+  _projectileSpeed: 5
   _archerUnit: {fileID: 2775201846542286774}
 --- !u!1 &7314795927413420633
 GameObject:

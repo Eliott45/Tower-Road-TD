@@ -11,7 +11,11 @@ namespace Units
         [SerializeField] private float _expReward;
 
         private protected override void Attack(GameObject target) { }
-        private protected override void GetDamage(float damage) { }
+
+        internal override void GetDamage(float damage)
+        {
+            Debug.LogError("Get damage: " + damage);
+        }
 
         public override void Die()
         {

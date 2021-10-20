@@ -5,7 +5,7 @@ namespace Towers
     public abstract class Tower : MonoBehaviour
     {
         [Header("Set tower options: ")] 
-        [SerializeField] private float _damage;
+        [SerializeField] private protected float _damage;
         [SerializeField] private ETypeDamage _typeDamage;
         [SerializeField] private float _buildTime;
         [SerializeField] private int[] _prices;
