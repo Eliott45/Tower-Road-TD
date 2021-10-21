@@ -24,6 +24,7 @@ public class BuildPanel : MonoBehaviour
     /// Show or not show construction panel.
     /// </summary>
     /// <param name="statusDisplay">Enable panel(true/false).</param>
+    /// <param name="spot"></param>
     /// <param name="newPos">New position of panel.</param>
     public void Display(bool statusDisplay, Transform newPos = null)
     {
