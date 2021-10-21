@@ -8,7 +8,7 @@ namespace Units
         [SerializeField] private Transform position;
         
         private protected override void Attack(GameObject target) {}
-        internal override void GetDamage(float damage) {}
+        internal override void GetDamage(float damage, ETypeDamage typeDamage) {}
         public override void Die() {}
         
         private void Back(){}

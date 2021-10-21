@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace Units
 {
+    [RequireComponent(typeof(AIPath))]
     [RequireComponent(typeof(Animator))]
     public abstract class Unit : MonoBehaviour, IClicked
     {
@@ -82,14 +83,15 @@ namespace Units
 
         private protected abstract void Attack(GameObject target);
 
-        internal virtual void GetDamage(float damage)
+        internal virtual void GetDamage(float damage, ETypeDamage typeDamage)
         {
             ShowDamage();
+            
+            // Calculate damage taking into account resistance 
+            damage = typeDamage == ETypeDamage.Physical ? damage - _physicalResistance : damage - _magicalResistance; 
+            
             _health -= damage;
-            if (_health <= 0)
-            {
-                Die();
-            }
+            if (_health <= 0) Die();
         }
 
         public virtual void Die()
@@ -129,6 +131,9 @@ namespace Units
             _damageDoneTime = Time.time + _showDamageDuration;
         }
     
+        /// <summary>
+        /// Make unit color normal to unshow damage.
+        /// </summary>
         private void UnShowDamage() {
             for (var i = 0; i < _materials.Length; i++) {
                 _materials[i].color = _originalColors[i];

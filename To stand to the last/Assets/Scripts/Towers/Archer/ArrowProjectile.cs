@@ -9,6 +9,7 @@ namespace Archer
         private GameObject _target; //The current target of the projectile. 
         private float _damage;
         private float _speed;
+        private ETypeDamage _typeDamage;
 
         private void Update()
         {
@@ -40,21 +41,23 @@ namespace Archer
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject != _target) return;
-            other.GetComponent<Unit>().GetDamage(_damage);
+            other.GetComponent<Unit>().GetDamage(_damage, _typeDamage);
             Destroy(gameObject);
         }
-        
+
         /// <summary>
         /// Set boom characteristics.
         /// </summary>
         /// <param name="target">Enemy.</param>
         /// <param name="speed">Speed of arrow.</param>
         /// <param name="damage">Damage to the enemy on hit.</param>
-        public void SetStats(GameObject target, float speed, float damage)
+        /// <param name="typeDamage">Type of damage.</param>
+        public void SetStats(GameObject target, float speed, float damage, ETypeDamage typeDamage = ETypeDamage.Physical)
         {
             _target = target;
             _damage = damage;
             _speed = speed;
+            _typeDamage = typeDamage;
         }
         
 

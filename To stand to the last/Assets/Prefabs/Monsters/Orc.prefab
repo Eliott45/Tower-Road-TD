@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 6
-  _physicalResistance: 0
+  _physicalResistance: 1
   _magicalResistance: 0
   _movementSpeed: 0.8
   _attackSpeed: 0

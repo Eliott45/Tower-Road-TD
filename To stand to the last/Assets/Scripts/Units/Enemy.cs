@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Units
 {
+    /// <summary>
+    /// The class responsible for all opponents in the game.
+    /// </summary>
     public class Enemy : Unit
     {
         [Header("Set enemy options:")]
