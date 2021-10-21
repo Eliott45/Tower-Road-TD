@@ -32,6 +32,7 @@ namespace Units
         private float _damageDoneTime;
         private bool _showingDamage;
 
+        // Animations
         private Animator _animator;
         private static readonly int Alive = Animator.StringToHash("alive");
         private static readonly int Demolish = Animator.StringToHash("demolish");
@@ -104,7 +105,7 @@ namespace Units
             _destinationSetter.target = destination;
             _unitMode = EUnitMode.Move;
         }
-
+    
         public void OnClick()
         {
             Debug.Log("Unit click");
