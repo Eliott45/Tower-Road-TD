@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Snow_TX_23
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 89228658295827470, guid: 58b6c2baf322d0b44bd4bf4a6ee8c43d, type: 3}
+  m_Sprite: {fileID: -8888017062244536156, guid: 4ae967d5f51ad7744ba2614c6ff5016c,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

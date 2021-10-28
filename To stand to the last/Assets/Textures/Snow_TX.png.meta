@@ -1,136 +1,136 @@
 fileFormatVersion: 2
-guid: 58b6c2baf322d0b44bd4bf4a6ee8c43d
+guid: 4ae967d5f51ad7744ba2614c6ff5016c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8857119273064532718
-    second: Snow_TX_0
+      213: 3596119431033540431
+    second: Snow_TX 1_0
   - first:
-      213: 5572218552817604881
-    second: Snow_TX_1
+      213: -3200736501360452348
+    second: Snow_TX 1_1
   - first:
-      213: 9077472381918259427
-    second: Snow_TX_2
+      213: -3999976521615129324
+    second: Snow_TX 1_2
   - first:
-      213: -1734539508906623399
-    second: Snow_TX_3
+      213: 3573008895214941929
+    second: Snow_TX 1_3
   - first:
-      213: -7007923252025526966
-    second: Snow_TX_4
+      213: -9031033641908116340
+    second: Snow_TX 1_4
   - first:
-      213: 7468441676637516442
-    second: Snow_TX_5
+      213: 9025332639065212980
+    second: Snow_TX 1_5
   - first:
-      213: -5783245750548131861
-    second: Snow_TX_6
+      213: -1905956663027665376
+    second: Snow_TX 1_6
   - first:
-      213: 5765492786280106306
-    second: Snow_TX_7
+      213: -356458985265425757
+    second: Snow_TX 1_7
   - first:
-      213: -153129850166374916
-    second: Snow_TX_8
+      213: 7553654768010869681
+    second: Snow_TX 1_8
   - first:
-      213: -8012841330717099187
-    second: Snow_TX_9
+      213: 3108733613490083608
+    second: Snow_TX 1_9
   - first:
-      213: 7392873929399266837
-    second: Snow_TX_10
+      213: -4987920195653959642
+    second: Snow_TX 1_10
   - first:
-      213: 671250009914599587
-    second: Snow_TX_11
+      213: 1464885399244558891
+    second: Snow_TX 1_11
   - first:
-      213: 3465560494104707979
-    second: Snow_TX_12
+      213: 4339068558491577707
+    second: Snow_TX 1_12
   - first:
-      213: -1115743544817530546
-    second: Snow_TX_13
+      213: 4534131909462449132
+    second: Snow_TX 1_13
   - first:
-      213: -5301917367606259413
-    second: Snow_TX_14
+      213: -5358724845868358191
+    second: Snow_TX 1_14
   - first:
-      213: -2744664241067318270
-    second: Snow_TX_15
+      213: -2234749833931742466
+    second: Snow_TX 1_15
   - first:
-      213: -7504220235930639035
-    second: Snow_TX_16
+      213: -9431275612466927
+    second: Snow_TX 1_16
   - first:
-      213: -8251752111952249890
-    second: Snow_TX_17
+      213: 1585066326434754665
+    second: Snow_TX 1_17
   - first:
-      213: -8631110130407041188
-    second: Snow_TX_18
+      213: 4664005742474421207
+    second: Snow_TX 1_18
   - first:
-      213: 7436529518379960754
-    second: Snow_TX_19
+      213: -216209929866690724
+    second: Snow_TX 1_19
   - first:
-      213: -7456084044238184820
-    second: Snow_TX_20
+      213: -5316805475032444789
+    second: Snow_TX 1_20
   - first:
-      213: 1534742081563107570
-    second: Snow_TX_21
+      213: -7118206816565844000
+    second: Snow_TX 1_21
   - first:
-      213: 7977910692936191053
-    second: Snow_TX_22
+      213: 7079626469365338629
+    second: Snow_TX 1_22
   - first:
-      213: 89228658295827470
-    second: Snow_TX_23
+      213: -8888017062244536156
+    second: Snow_TX 1_23
   - first:
-      213: -4982554112578224048
-    second: Snow_TX_24
+      213: 2198865079076850397
+    second: Snow_TX 1_24
   - first:
-      213: 3102508279492972683
-    second: Snow_TX_25
+      213: -7698962014516182208
+    second: Snow_TX 1_25
   - first:
-      213: 6317610256348770246
-    second: Snow_TX_26
+      213: -8899706700026896408
+    second: Snow_TX 1_26
   - first:
-      213: 6621886020124175497
-    second: Snow_TX_27
+      213: 7796471803687464140
+    second: Snow_TX 1_27
   - first:
-      213: 5259309992010681599
-    second: Snow_TX_28
+      213: -592455422432320487
+    second: Snow_TX 1_28
   - first:
-      213: 1870047827280230122
-    second: Snow_TX_29
+      213: 4463366887301035587
+    second: Snow_TX 1_29
   - first:
-      213: -2357144602124089781
-    second: Snow_TX_30
+      213: 8386102238851467311
+    second: Snow_TX 1_30
   - first:
-      213: 5188770904368457483
-    second: Snow_TX_31
+      213: 7757392582816904907
+    second: Snow_TX 1_31
   - first:
-      213: -1044380613419708405
-    second: Snow_TX_32
+      213: 1903151812489519054
+    second: Snow_TX 1_32
   - first:
-      213: 1487058726936808657
-    second: Snow_TX_33
+      213: 3114843339363140957
+    second: Snow_TX 1_33
   - first:
-      213: -8251132398911336856
-    second: Snow_TX_34
+      213: -7319671732502876024
+    second: Snow_TX 1_34
   - first:
-      213: -4034363557839595482
-    second: Snow_TX_35
+      213: 2143849096700977503
+    second: Snow_TX 1_35
   - first:
-      213: -5937208938068095592
-    second: Snow_TX_36
+      213: 2669795876755804407
+    second: Snow_TX 1_36
   - first:
-      213: 8145078378089448485
-    second: Snow_TX_37
+      213: 7325421728927892283
+    second: Snow_TX 1_37
   - first:
-      213: 5875210027968565880
-    second: Snow_TX_38
+      213: -2648002742049706408
+    second: Snow_TX 1_38
   - first:
-      213: -1087994122462862281
-    second: Snow_TX_39
+      213: 8240071691791025285
+    second: Snow_TX 1_39
   - first:
-      213: 2008699870586025078
-    second: Snow_TX_40
+      213: 4771089636916474172
+    second: Snow_TX 1_40
   - first:
-      213: -8690701440955376281
-    second: Snow_TX_41
+      213: -1877472433555767815
+    second: Snow_TX 1_41
   - first:
-      213: -9005610011548644612
-    second: Snow_TX_42
+      213: -9122932842542647280
+    second: Snow_TX 1_42
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -204,11 +204,47 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Snow_TX_0
+      name: Snow_TX 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -222,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 215f8bbb2f0351580800000000000000
-      internalID: -8857119273064532718
+      spriteID: f4f42a8c19bf7e130800000000000000
+      internalID: 3596119431033540431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_1
+      name: Snow_TX 1_1
       rect:
         serializedVersion: 2
         x: 256
@@ -243,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 119d88b304f745d40800000000000000
-      internalID: 5572218552817604881
+      spriteID: 40d98c83c13b493d0800000000000000
+      internalID: -3200736501360452348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_2
+      name: Snow_TX 1_2
       rect:
         serializedVersion: 2
         x: 512
@@ -264,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e828ae6909a9fd70800000000000000
-      internalID: 9077472381918259427
+      spriteID: 4154a3fdb8a3d78c0800000000000000
+      internalID: -3999976521615129324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_3
+      name: Snow_TX 1_3
       rect:
         serializedVersion: 2
         x: 768
@@ -285,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95e7db2b18dade7e0800000000000000
-      internalID: -1734539508906623399
+      spriteID: 9e6f89ad8a0e59130800000000000000
+      internalID: 3573008895214941929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_4
+      name: Snow_TX 1_4
       rect:
         serializedVersion: 2
         x: 1024
@@ -306,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4571dd8eeadebe90800000000000000
-      internalID: -7007923252025526966
+      spriteID: c84e67b40c25ba280800000000000000
+      internalID: -9031033641908116340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_5
+      name: Snow_TX 1_5
       rect:
         serializedVersion: 2
         x: 1280
@@ -327,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a92b3b9a22c35a760800000000000000
-      internalID: 7468441676637516442
+      spriteID: 438883b873c604d70800000000000000
+      internalID: 9025332639065212980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_6
+      name: Snow_TX 1_6
       rect:
         serializedVersion: 2
         x: 1536
@@ -348,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bef8acd71a8cdbfa0800000000000000
-      internalID: -5783245750548131861
+      spriteID: 02672fe538eac85e0800000000000000
+      internalID: -1905956663027665376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_7
+      name: Snow_TX 1_7
       rect:
         serializedVersion: 2
         x: 0
@@ -369,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2498d496425230050800000000000000
-      internalID: 5765492786280106306
+      spriteID: 3a21246017a9d0bf0800000000000000
+      internalID: -356458985265425757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_8
+      name: Snow_TX 1_8
       rect:
         serializedVersion: 2
         x: 256
@@ -390,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfd035c6639ffddf0800000000000000
-      internalID: -153129850166374916
+      spriteID: 1bb39339df8f3d860800000000000000
+      internalID: 7553654768010869681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_9
+      name: Snow_TX 1_9
       rect:
         serializedVersion: 2
         x: 512
@@ -411,14 +447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4bf909734bacc090800000000000000
-      internalID: -8012841330717099187
+      spriteID: 817946d20c0742b20800000000000000
+      internalID: 3108733613490083608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_10
+      name: Snow_TX 1_10
       rect:
         serializedVersion: 2
         x: 768
@@ -432,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51ee61f6ba3c89660800000000000000
-      internalID: 7392873929399266837
+      spriteID: 6208c0a520957cab0800000000000000
+      internalID: -4987920195653959642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_11
+      name: Snow_TX 1_11
       rect:
         serializedVersion: 2
         x: 1024
@@ -453,14 +489,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a8ef6cd352c05900800000000000000
-      internalID: 671250009914599587
+      spriteID: b22d0a26281545410800000000000000
+      internalID: 1464885399244558891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_12
+      name: Snow_TX 1_12
       rect:
         serializedVersion: 2
         x: 1280
@@ -474,14 +510,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b830db678e4281030800000000000000
-      internalID: 3465560494104707979
+      spriteID: b6de4f45dd7773c30800000000000000
+      internalID: 4339068558491577707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_13
+      name: Snow_TX 1_13
       rect:
         serializedVersion: 2
         x: 1536
@@ -495,14 +531,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4947be48251480f0800000000000000
-      internalID: -1115743544817530546
+      spriteID: cebd544e2f87cee30800000000000000
+      internalID: 4534131909462449132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_14
+      name: Snow_TX 1_14
       rect:
         serializedVersion: 2
         x: 0
@@ -516,14 +552,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b21da53be3ecb66b0800000000000000
-      internalID: -5301917367606259413
+      spriteID: 1d5e4f8f42cf1a5b0800000000000000
+      internalID: -5358724845868358191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_15
+      name: Snow_TX 1_15
       rect:
         serializedVersion: 2
         x: 256
@@ -537,14 +573,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20427732a6ef8e9d0800000000000000
-      internalID: -2744664241067318270
+      spriteID: ef2a2a2cdd29cf0e0800000000000000
+      internalID: -2234749833931742466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_16
+      name: Snow_TX 1_16
       rect:
         serializedVersion: 2
         x: 512
@@ -558,14 +594,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5456e095477abd790800000000000000
-      internalID: -7504220235930639035
+      spriteID: 11117570e4e7edff0800000000000000
+      internalID: -9431275612466927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_17
+      name: Snow_TX 1_17
       rect:
         serializedVersion: 2
         x: 768
@@ -579,14 +615,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edbb1808c23eb7d80800000000000000
-      internalID: -8251752111952249890
+      spriteID: 960b3940d694ff510800000000000000
+      internalID: 1585066326434754665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_18
+      name: Snow_TX 1_18
       rect:
         serializedVersion: 2
         x: 1024
@@ -600,14 +636,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5710d3e013283880800000000000000
-      internalID: -8631110130407041188
+      spriteID: 7d3e1960380e9b040800000000000000
+      internalID: 4664005742474421207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_19
+      name: Snow_TX 1_19
       rect:
         serializedVersion: 2
         x: 1280
@@ -621,14 +657,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b98eb0523cd33760800000000000000
-      internalID: 7436529518379960754
+      spriteID: c5f326dd63edffcf0800000000000000
+      internalID: -216209929866690724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_20
+      name: Snow_TX 1_20
       rect:
         serializedVersion: 2
         x: 1536
@@ -642,14 +678,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8e99b7d01ba68890800000000000000
-      internalID: -7456084044238184820
+      spriteID: b80d6d01799e636b0800000000000000
+      internalID: -5316805475032444789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_21
+      name: Snow_TX 1_21
       rect:
         serializedVersion: 2
         x: 0
@@ -663,14 +699,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f0a961bacf7c4510800000000000000
-      internalID: 1534742081563107570
+      spriteID: 0e724dc3d9c073d90800000000000000
+      internalID: -7118206816565844000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_22
+      name: Snow_TX 1_22
       rect:
         serializedVersion: 2
         x: 256
@@ -684,14 +720,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4c8046a18b37be60800000000000000
-      internalID: 7977910692936191053
+      spriteID: 50259f0b3c2ef3260800000000000000
+      internalID: 7079626469365338629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_23
+      name: Snow_TX 1_23
       rect:
         serializedVersion: 2
         x: 512
@@ -705,14 +741,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0ce181fdf00d3100800000000000000
-      internalID: 89228658295827470
+      spriteID: 4a0bd47929b67a480800000000000000
+      internalID: -8888017062244536156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_24
+      name: Snow_TX 1_24
       rect:
         serializedVersion: 2
         x: 768
@@ -726,14 +762,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0500d9dee696adab0800000000000000
-      internalID: -4982554112578224048
+      spriteID: dda036ba320f38e10800000000000000
+      internalID: 2198865079076850397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_25
+      name: Snow_TX 1_25
       rect:
         serializedVersion: 2
         x: 1024
@@ -747,14 +783,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8013e7a7d25e0b20800000000000000
-      internalID: 3102508279492972683
+      spriteID: 0438981b6dac72590800000000000000
+      internalID: -7698962014516182208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_26
+      name: Snow_TX 1_26
       rect:
         serializedVersion: 2
         x: 1280
@@ -768,14 +804,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cf68075e09aca750800000000000000
-      internalID: 6317610256348770246
+      spriteID: 8ef9bb3b8e3ed7480800000000000000
+      internalID: -8899706700026896408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_27
+      name: Snow_TX 1_27
       rect:
         serializedVersion: 2
         x: 1536
@@ -789,14 +825,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98c60a4404aa5eb50800000000000000
-      internalID: 6621886020124175497
+      spriteID: ccce3284cc1a23c60800000000000000
+      internalID: 7796471803687464140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_28
+      name: Snow_TX 1_28
       rect:
         serializedVersion: 2
         x: 0
@@ -810,14 +846,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffc857d9292dcf840800000000000000
-      internalID: 5259309992010681599
+      spriteID: 914eaa8aeec27c7f0800000000000000
+      internalID: -592455422432320487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_29
+      name: Snow_TX 1_29
       rect:
         serializedVersion: 2
         x: 256
@@ -831,14 +867,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae6770a479eb3f910800000000000000
-      internalID: 1870047827280230122
+      spriteID: 346b1db398011fd30800000000000000
+      internalID: 4463366887301035587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_30
+      name: Snow_TX 1_30
       rect:
         serializedVersion: 2
         x: 512
@@ -852,14 +888,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b460a2a197db94fd0800000000000000
-      internalID: -2357144602124089781
+      spriteID: f2889d40e8b616470800000000000000
+      internalID: 8386102238851467311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_31
+      name: Snow_TX 1_31
       rect:
         serializedVersion: 2
         x: 768
@@ -873,14 +909,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b07a3cf65a7320840800000000000000
-      internalID: 5188770904368457483
+      spriteID: bc63d02247bc7ab60800000000000000
+      internalID: 7757392582816904907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_32
+      name: Snow_TX 1_32
       rect:
         serializedVersion: 2
         x: 1024
@@ -894,14 +930,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0050de8d5d9181f0800000000000000
-      internalID: -1044380613419708405
+      spriteID: ecf14197d7a596a10800000000000000
+      internalID: 1903151812489519054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_33
+      name: Snow_TX 1_33
       rect:
         serializedVersion: 2
         x: 1280
@@ -915,14 +951,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dc863b880813a410800000000000000
-      internalID: 1487058726936808657
+      spriteID: d554bb593852a3b20800000000000000
+      internalID: 3114843339363140957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_34
+      name: Snow_TX 1_34
       rect:
         serializedVersion: 2
         x: 1536
@@ -936,14 +972,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86e4c20bcc61e7d80800000000000000
-      internalID: -8251132398911336856
+      spriteID: 880b2bf275d4b6a90800000000000000
+      internalID: -7319671732502876024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_35
+      name: Snow_TX 1_35
       rect:
         serializedVersion: 2
         x: 0
@@ -957,14 +993,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 628903818bf0308c0800000000000000
-      internalID: -4034363557839595482
+      spriteID: f5167e4156b70cd10800000000000000
+      internalID: 2143849096700977503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_36
+      name: Snow_TX 1_36
       rect:
         serializedVersion: 2
         x: 256
@@ -978,14 +1014,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89d4d217debca9da0800000000000000
-      internalID: -5937208938068095592
+      spriteID: 7f015d864350d0520800000000000000
+      internalID: 2669795876755804407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_37
+      name: Snow_TX 1_37
       rect:
         serializedVersion: 2
         x: 512
@@ -999,14 +1035,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5248cb161a1290170800000000000000
-      internalID: 8145078378089448485
+      spriteID: b33ccae204029a560800000000000000
+      internalID: 7325421728927892283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_38
+      name: Snow_TX 1_38
       rect:
         serializedVersion: 2
         x: 768
@@ -1020,14 +1056,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87211e96460f88150800000000000000
-      internalID: 5875210027968565880
+      spriteID: 85eeddb2987604bd0800000000000000
+      internalID: -2648002742049706408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_39
+      name: Snow_TX 1_39
       rect:
         serializedVersion: 2
         x: 1024
@@ -1041,14 +1077,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73463ec2c1ba6e0f0800000000000000
-      internalID: -1087994122462862281
+      spriteID: 584c4f0cb8d9a5270800000000000000
+      internalID: 8240071691791025285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_40
+      name: Snow_TX 1_40
       rect:
         serializedVersion: 2
         x: 1280
@@ -1062,14 +1098,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67437a6c3e550eb10800000000000000
-      internalID: 2008699870586025078
+      spriteID: c3134f71fb0563240800000000000000
+      internalID: 4771089636916474172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_41
+      name: Snow_TX 1_41
       rect:
         serializedVersion: 2
         x: 1536
@@ -1083,14 +1119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76d11e2b51d646780800000000000000
-      internalID: -8690701440955376281
+      spriteID: 9fdf15ad4c0e1f5e0800000000000000
+      internalID: -1877472433555767815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow_TX_42
+      name: Snow_TX 1_42
       rect:
         serializedVersion: 2
         x: 1280
@@ -1104,8 +1140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfa01f38865a50380800000000000000
-      internalID: -9005610011548644612
+      spriteID: 01830824ae4d46180800000000000000
+      internalID: -9122932842542647280
       vertices: []
       indices: 
       edges: []
