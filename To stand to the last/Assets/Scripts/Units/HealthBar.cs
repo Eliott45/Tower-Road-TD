@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +10,15 @@ namespace Units
     {
         [SerializeField] private Slider _slider;
 
+        private void Awake()
+        {
+            _slider.gameObject.SetActive(false);
+        }
+
+        /// <summary>
+        /// Set max value in Slider.
+        /// </summary>
+        /// <param name="hp">Max value.</param>
         public void SetMaxHealth(float hp)
         {
             _slider.maxValue = hp;
@@ -19,6 +27,7 @@ namespace Units
 
         public void SetCurrentHealth(float hp)
         {
+            if (hp < _slider.maxValue) _slider.gameObject.SetActive(true);
             _slider.value = hp;
         }
     }
