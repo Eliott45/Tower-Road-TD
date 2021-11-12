@@ -20,6 +20,7 @@ namespace Units
         [SerializeField] private float _triggerRange;
         [SerializeField] private EUnitMode _unitMode;
         [SerializeField] private ETypeDamage _damageType;
+        [SerializeField] private HealthBar _healthBar;
 
         // Moving unit
         private AIDestinationSetter _destinationSetter;
@@ -52,6 +53,9 @@ namespace Units
             for (var i = 0; i < _materials.Length; i++){
                 _originalColors[i] = _materials[i].color;
             }
+            
+            // HealthBar
+            _healthBar.SetMaxHealth(_health);
         }
 
         private protected void Start()
@@ -92,6 +96,7 @@ namespace Units
             damage = typeDamage == ETypeDamage.Physical ? damage - _physicalResistance : damage - _magicalResistance; 
             
             _health -= damage;
+            _healthBar.SetCurrentHealth(_health);
             if (_health <= 0) Die();
         }
 
