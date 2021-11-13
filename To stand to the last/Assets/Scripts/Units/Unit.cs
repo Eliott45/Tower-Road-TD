@@ -6,11 +6,12 @@ using UnityEngine;
 namespace Units
 {
     [RequireComponent(typeof(AIPath))]
+    [RequireComponent(typeof(AIDestinationSetter))]
     [RequireComponent(typeof(Animator))]
     public abstract class Unit : MonoBehaviour, IClicked
     {
         [Header("Unit options: ")]
-        [SerializeField] private float _health;
+        [SerializeField] private float _health; // Current health of unit
         [SerializeField] private float _physicalResistance;
         [SerializeField] private float _magicalResistance;
         [SerializeField] private float _movementSpeed; // Unit movement speed 

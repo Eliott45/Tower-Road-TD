@@ -11,7 +11,7 @@ namespace Archer
         [SerializeField] private GameObject _projectile;
         [SerializeField] private float _projectileSpeed;
         [SerializeField] private ArcherUnit _archerUnit;
-
+        
         private protected override void Update()
         {
             base.Update();

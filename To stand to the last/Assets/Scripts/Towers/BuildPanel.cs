@@ -23,8 +23,7 @@ public class BuildPanel : MonoBehaviour
     /// <summary>
     /// Show or not show construction panel.
     /// </summary>
-    /// <param name="statusDisplay">Enable panel(true/false).</param>
-    /// <param name="spot"></param>
+    /// <param name="statusDisplay">Enable panel (true/false).</param>
     /// <param name="newPos">New position of panel.</param>
     public void Display(bool statusDisplay, Transform newPos = null)
     {
@@ -35,5 +34,6 @@ public class BuildPanel : MonoBehaviour
         }
         gameObject.SetActive(statusDisplay);
     }
+    
     
 }

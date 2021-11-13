@@ -7,6 +7,7 @@ public class RangeTower : Tower
     [Header("Set range tower options:")]
     [SerializeField] private float _rangeAttack;
     [SerializeField] private float _speedAttack;
+    [SerializeField] private ETypeDamage _typeDamage;
     
     [Header("Set range tower dynamically:")]
     [SerializeField] private List<GameObject> _targets = new List<GameObject>();
@@ -14,7 +15,7 @@ public class RangeTower : Tower
     
     private float _reloadingTime; // Time when tower can attack again
 
-    private void Awake()
+    private protected virtual void Awake()
     {
         GetComponent<CircleCollider2D>().radius = _rangeAttack;
     }
