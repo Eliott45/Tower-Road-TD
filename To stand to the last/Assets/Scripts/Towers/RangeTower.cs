@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Towers;
 using UnityEngine;
 
 public class RangeTower : Tower
@@ -17,7 +16,7 @@ public class RangeTower : Tower
 
     private protected virtual void Awake()
     {
-        GetComponent<CircleCollider2D>().radius = _rangeAttack;
+        GetComponent<CircleCollider2D>().radius = _rangeAttack; // Set collider range for attack.
     }
 
     private protected virtual void Update()

@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3688705568444768915}
   m_Layer: 0
   m_Name: TowerArcher
-  m_TagString: ArcherTower
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,13 +225,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 3
-  _typeDamage: 0
   _buildTime: 0
   _prices: 
   _towers: []
-  _level: 0
+  _level: 1
   _rangeAttack: 3.5
   _speedAttack: 1
+  _typeDamage: 0
   _targets: []
   _currentTarget: {fileID: 0}
   _projectile: {fileID: 7901366052003301174, guid: b7269e096e9a5da4faf6b9889eb879ed,

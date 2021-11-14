@@ -9,7 +9,7 @@ public abstract class Tower : MonoBehaviour, IClicked
     [SerializeField] private float _buildTime;
     [SerializeField] private int[] _prices;
     [SerializeField] private Sprite[] _towers;
-    [SerializeField] private int _level;
+    [SerializeField] private int _level = 1;
     
     private BoxCollider2D _towerSpotCollider;
 
@@ -30,6 +30,6 @@ public abstract class Tower : MonoBehaviour, IClicked
 
     public void OnClick()
     {
-        throw new System.NotImplementedException();
+        BuildPanel.instance.Display(true, transform, _level); 
     }
 }

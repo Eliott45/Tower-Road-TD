@@ -3,6 +3,7 @@ using UnityEngine;
 /// <summary>
 /// UI Construction panel.
 /// </summary>
+[RequireComponent(typeof(Animator))]
 public class BuildPanel : MonoBehaviour
 {
     /// <summary>
@@ -14,9 +15,13 @@ public class BuildPanel : MonoBehaviour
     /// </summary>
     public Transform towerSpotTransform { get; private set; }
 
+    private static readonly int Index = Animator.StringToHash("index");
+    private Animator _animator;
+
     private void Awake()
     {
         instance = this;
+        _animator = GetComponent<Animator>(); 
         Display(false);
     }
 
@@ -25,15 +30,15 @@ public class BuildPanel : MonoBehaviour
     /// </summary>
     /// <param name="statusDisplay">Enable panel (true/false).</param>
     /// <param name="newPos">New position of panel.</param>
-    public void Display(bool statusDisplay, Transform newPos = null)
+    /// <param name="level">Level of tower (0 is just a spot).</param>
+    public void Display(bool statusDisplay, Transform newPos = null, int level = 0)
     {
         if (newPos != null)
         {
             gameObject.transform.position = newPos.position;
             towerSpotTransform = newPos;
         }
+        _animator.SetFloat(Index, level);
         gameObject.SetActive(statusDisplay);
     }
-    
-    
 }
