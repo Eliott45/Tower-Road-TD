@@ -1,7 +1,6 @@
 using Mouse;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
 public abstract class Tower : MonoBehaviour, IClicked
 {
     [Header("Set tower options: ")] 

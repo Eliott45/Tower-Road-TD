@@ -45,7 +45,6 @@ namespace Spawner
         {
             _enemiesCounter--;
             if (_enemiesCounter <= 0 && _currentWave == _waves.Length) LevelManager.instance.Win();
-            
         }
 
         /// <summary>

@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Ranged towers. 
+/// </summary>
 public class RangeTower : Tower
 {
     [Header("Set range tower options:")]

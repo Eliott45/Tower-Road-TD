@@ -98,7 +98,7 @@ namespace Units
             
             _health -= damage;
             _healthBar.SetCurrentHealth(_health);
-            if (_health <= 0) Die();
+            if (_health <= 0 && _unitMode != EUnitMode.Die) Die();
         }
 
         public virtual void Die()

@@ -965,6 +965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 450514295}
   - component: {fileID: 450514296}
+  - component: {fileID: 450514297}
   m_Layer: 5
   m_Name: DestroyChoice
   m_TagString: Untagged
@@ -1018,6 +1019,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 35.952732, y: 29.228203}
   m_EdgeRadius: 0
+--- !u!114 &450514297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450514294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c2794bbd1e98841b4c97469227ba33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &460716287
 GameObject:
   m_ObjectHideFlags: 0
