@@ -5,14 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - TowerSpot
-  - ArcherTower
-  - SupportTower
-  - MagicTower
   - Enemy
-  - BuildMagicTower
-  - BuildArcherTower
-  - BuildStoneTower
-  - BuildSupportTower
+  - Tower
   layers:
   - Default
   - TransparentFX

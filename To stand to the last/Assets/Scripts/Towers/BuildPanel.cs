@@ -40,5 +40,6 @@ public class BuildPanel : MonoBehaviour
         }
         _animator.SetFloat(Index, level);
         gameObject.SetActive(statusDisplay);
+       
     }
 }
